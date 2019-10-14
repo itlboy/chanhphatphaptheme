@@ -1,0 +1,20 @@
+body{
+	background-color: #f5f7f1;
+}
+.container{
+	background-color: #000;
+	height: 500px;
+}
+#bamboo-bg-right, 
+#bamboo-bg-left{
+	width: 300px;
+    position: absolute;
+    z-index: -1;
+}
+#bamboo-bg-right{
+	right:0px;
+}
+#bamboo-bg-left{
+	left: 0px;
+	transform: scaleX(-1);
+}

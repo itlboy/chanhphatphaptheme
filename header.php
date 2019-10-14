@@ -10,7 +10,7 @@
 
 	<title>Blog Template for Bootstrap</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-	<link href="<?php echo get_bloginfo( 'template_directory' );?>/blog.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/app.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -20,22 +20,8 @@
 </head>
 
 <body>
-
-	<div class="blog-masthead">
-		<div class="container">
-			<nav class="blog-nav">
-				<a class="blog-nav-item active" href="#">Home</a>
-				<a class="blog-nav-item" href="#">New features</a>
-				<a class="blog-nav-item" href="#">Press</a>
-				<a class="blog-nav-item" href="#">New hires</a>
-				<a class="blog-nav-item" href="#">About</a>
-			</nav>
-		</div>
-	</div>
-
+	<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-right" alt="" >
+	<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-left" alt="" >
 	<div class="container">
 
-		<div class="blog-header">
-			<h1 class="blog-title">The Bootstrap Blog</h1>
-			<p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-		</div>
+		
