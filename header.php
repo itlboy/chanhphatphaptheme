@@ -20,8 +20,23 @@
 </head>
 
 <body>
-	<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-right" alt="" >
-	<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-left" alt="" >
-	<div class="container">
+	<div class="wrapper-main">
+		<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-right" alt="" >
+		<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-left" alt="" >
+		<div class="container">
+			<header>
+				<div class="row">
+					<div class="col-12">
+						<div class="contact-address">	
+							
+						</div>
+					</div>
+				</div>
+
+
+
+
+			</header>
+
 
 		

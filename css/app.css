@@ -2,12 +2,14 @@ body{
 	background-color: #f5f7f1;
 }
 .container{
-	background-color: #000;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
 	height: 500px;
 }
 #bamboo-bg-right, 
 #bamboo-bg-left{
-	width: 300px;
     position: absolute;
     z-index: -1;
 }
@@ -18,3 +20,61 @@ body{
 	left: 0px;
 	transform: scaleX(-1);
 }
+
+.contact-address{
+	height:40px;
+	line-height: 40px;
+	background-color: #f3f3f3;
+}
+.contact-address .container{
+	height: 100%;
+	background: transparent;
+	box-shadow: none;
+}
+.contact-content{
+	color:#878787;
+	float: left;
+}
+.lang-page{
+	text-align: right;
+}
+.lang-page a{
+	color:#2f2f2f;
+	text-decoration: none;
+}
+.logo-wrapper .logo-title{
+	height: 100%;
+    padding-top: 65px;
+	text-align: center;
+}
+.logo-wrapper .logo-title .title-top{
+	font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: #2f2f2f;
+
+}
+.logo-wrapper .logo-title .title-bottom{
+	font-size: 26px;
+    font-weight: bold;
+    font-style: italic;
+    color: #eaa959;
+}
+.logo-content{
+	text-align: center;
+}
+.logo-content .logo-image-wraper{
+	width: 175px;
+	height: 175px;
+	background-color: #fdeedd;
+	border-radius: 50%;
+	padding: 10px;
+}
+.logo-content .logo-image-wraper .logo-image{
+	height: 155px;
+	width: 155px;
+	background-color: #fbd5a9;
+	border-radius: 50%;
+	line-height: 135px;
+}
+
