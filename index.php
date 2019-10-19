@@ -54,13 +54,120 @@
 						</div>
 
 					</div>
+					<div class="title-content col-lg-12">tu hành đúng chánh phật pháp</div>
+				</div>
+				<div class="row">
+					<div class="slide-show-wrapper col-lg-12">
+						<img class="col-lg-12" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide.png" alt="">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="slogan-wrapper col-lg-12">
+						Một cây làm chẳng lên non - Ba cây chụm lại nên hòn núi cao
+					</div>
+					
+				</div>
+				<div class="menu-wrapper col-lg-12">
+					<ul class="nav nav-tabs">
+						<li class="nav-item col-lg-1">
+							<a class="nav-link active" href="#">Trang chủ</a>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">Sách gối đầu tu tập</a>
+						</li>
+						<li class="nav-item dropdown col-lg-2">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">pháp thực hành</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Pháp thực hành link 01</a>
+								<a class="dropdown-item" href="#">Pháp thực hành link 02</a>
+								<a class="dropdown-item" href="#">Pháp thực hành link 03</a>
+							</div>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">các bài giảng pháp</a>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">thầy thanh thiện</a>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">hành giả hồi đạo</a>
+						</li>
+						<li class="nav-item col-lg-1">
+							<a class="nav-link" href="#">Video/ audio</a>
+						</li>
+
+					</ul>
 				</div>
 
+
+
 			</header>
+			<div class="main-content col-lg-12">
+				<div class="notify-wrapper col-lg-12">
+					<div class="notify-label col-lg-2">
+						Thông báo mới: 
+					</div>
+					<div class="notify-content col-lg-10">
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					</div>
+
+				</div>
+				<div class="content col-xs-12">
+					<div class="left-content col-xs-8">
+						<div class="block-wrapper col-xs-12">
+							<div class="left-block-equal col-xs-6">
+								<div class="img-block-large">
+									<img src="" alt="">
+								</div>
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+								</div>
+							</div>
+							<div class="right-block-equal col-xs-6">
+								<div class="list-news">
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="block-wrapper col-xs-12">
+							
+						</div>
+						
+					</div>
+					<div class="right-content col-xs-4">
+						
+					</div>
+				</div>
+			</div>
 
 
 		</div> <!-- /.container -->
 	</div> 
+
 
 
 
