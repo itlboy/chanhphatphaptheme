@@ -96,12 +96,8 @@
 						<li class="nav-item col-lg-1">
 							<a class="nav-link" href="#">Video/ audio</a>
 						</li>
-
 					</ul>
 				</div>
-
-
-
 			</header>
 			<div class="main-content col-lg-12">
 				<div class="notify-wrapper col-lg-12">
