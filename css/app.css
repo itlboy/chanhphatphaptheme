@@ -6,7 +6,6 @@ body{
 	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
 	-moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
 	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
-	height: 5000px;
 }
 
 #bamboo-bg-right, 
@@ -103,6 +102,7 @@ body{
 	border: 1px solid #e4e7df;
     border-right: 0px;
 }
+
 .menu-wrapper .nav-tabs .nav-item:last-child{
 	border-right: 1px solid #e4e7df;
 }
@@ -188,7 +188,8 @@ body{
 .right-content,
 .left-content,
 .block-wrapper,
-.title-block-wrapper{
+.title-block-wrapper,
+.news-item{
 	padding: 0px;
 }
 .left-block-equal{
@@ -216,6 +217,16 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 
+}
+.news-item .title-news .double-padles{
+	float: left;
+	margin-right: 10px;
+	font-weight: normal;
+}
+
+.news-item .content-news{
+	margin-top: 15px;
+	margin-bottom:15px;
 }
 .list-news .news-item .content-news{
 	margin-top: 25px;
@@ -304,4 +315,78 @@ body{
 
 .menu-item .menu-link:hover {
   color: #eaa959;
+}
+
+/*footer*/
+
+.menu-footer,
+.menu-footer .nav-tabs .nav-item .nav-link,
+.menu-footer .nav-tabs .nav-item{
+	padding: 0px
+}
+.menu-footer .nav-tabs{
+	border: 0px;
+}
+.menu-footer .nav-tabs .nav-item .nav-link{
+	text-align: center;
+	margin: 0px;
+	color: #212121;
+	font-weight: bold;
+	border: 1px solid #ebebeb;
+	border-radius: 0px;
+	border-right: 0px;
+	height: 46px;
+	line-height: 46px;
+	background-color: #f8f8f8;
+}
+.menu-footer .nav-tabs .nav-item .nav-link:last-child{
+	border-right: 1px solid #ebebeb;
+}
+.menu-footer .nav-tabs .nav-item .nav-link.active{
+	color: #88b732;
+	text-decoration: underline;
+}
+.footer-content{
+	background-color: #ebebeb;
+}
+.footer-content .logo-wrapper .logo-title .title-bottom,
+.footer-content .logo-wrapper .logo-title .title-top{
+	color: #2f2f2f;
+	text-transform: uppercase;
+	font-size: 23px;
+	font-style: normal;
+	text-align: left;
+}
+
+.footer-content .logo-wrapper .logo-title{
+	padding-top: 55px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.link-wrapper,.contact-wrapper{
+	padding-top: 40px;
+}
+.link-wrapper .list-news-link .link-item{
+	padding: 5px;
+	text-align: center;
+}
+.link-wrapper .list-news-link .link-item a{
+	color: #737373;
+	text-decoration: none;
+}
+.contact-wrapper{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.contact-wrapper .title-contact{
+	font-weight: bold;
+	color: #737373;
+	padding-top: 5px;
+	padding-bottom: 15px;
+}
+.contact-wrapper .contact-content{
+	color: #737373;
+}
+.contact-wrapper .contact-content p{
+	margin-bottom: 4px;
 }
