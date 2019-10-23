@@ -11,7 +11,6 @@
 	<title>Blog Template for Bootstrap</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/app.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/category-page/category.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -101,7 +100,7 @@
 				</div>
 			</header>
 			<div class="main-content col-lg-12">
-			<!-- 	<div class="notify-wrapper col-lg-12">
+				<div class="notify-wrapper col-lg-12">
 					<div class="notify-label col-lg-2">
 						Thông báo mới: 
 					</div>
@@ -109,14 +108,8 @@
 						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 					</div>
 
-				</div> -->
+				</div>
 				<div class="content col-xs-12">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
-							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Các bài giảng pháp</li>
-						</ol>
-					</nav>
 					<div class="left-content col-xs-8">
 						<div class="block-wrapper col-xs-12">
 							<div class="left-block-equal col-xs-6">

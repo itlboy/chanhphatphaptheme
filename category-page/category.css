@@ -1,0 +1,17 @@
+.content{
+	margin:0px;
+}
+.breadcrumb>li+li:before{
+	content: ">";
+}
+.breadcrumb{
+	background-color: #fff;
+	border-bottom:1px solid #ebebeb;
+	padding-left: 0px;
+	padding-bottom: 10px;
+}
+.breadcrumb .breadcrumb-item a{
+	font-weight: bold;
+	color:#84ad40;
+	text-decoration: none;
+}
