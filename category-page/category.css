@@ -11,7 +11,124 @@
 	padding-bottom: 10px;
 }
 .breadcrumb .breadcrumb-item a{
-	font-weight: bold;
 	color:#84ad40;
 	text-decoration: none;
+}
+.breadcrumb .breadcrumb-item{
+	font-weight: bold;
+}
+.dropdown-order-by{
+	position: absolute;
+	right: 0px;
+	top: 5px;
+}
+.dropdown-order-by .dropdown-menu .dropdown-item{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	color: #212121;
+	text-decoration: none;
+}
+.dropdown-order-by .dropdown-menu .dropdown-item:hover{
+	background-color: #eaa959;
+	color:#fff;
+}
+
+#dropdownOrderBy{
+	background-color: #f8f8f8;
+	border:1px solid #e1e1e1;
+	width: 120px;
+	height: 25px;
+	border-radius: 3px;
+	padding: 0px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 9px;
+}
+#dropdownOrderBy i{
+	position: absolute;
+	right: 4px;
+	top: 8px;
+	font-size: 12px;
+}
+.dropdown-order-by .dropdown-menu{
+	min-width: 120px;
+	padding: 0px;
+}
+.block-news{
+	border-bottom:1px solid #ebebeb;
+	padding: 0px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.block-news .title-news{
+	margin-bottom: 10px;
+}
+.block-news .content-news{
+	margin: 0px;
+}
+.left-block-equal .block-news{
+	border: 0px;
+}
+.list-news .news-item .content-news{
+	margin-top: 20px;
+}
+.list-news .news-item:first-child .content-news{
+	margin-top: 0px;
+}
+.block-item .block-news{
+	border: 0px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 0px;
+}
+.block-item .block-news .title-news{
+	margin-bottom: 5px;
+}
+.block-wrapper{
+	margin: 0px;
+}
+.block-split .left-block-equal .title-news{
+	margin: 0px;
+}
+.block-split .left-block-equal .block-news{
+	padding: 0px;
+	margin: 0px;
+}
+.block-split{
+	margin-bottom: 40px;
+}
+
+#pagination-wrapper{
+	float: left;
+}
+#pagination-wrapper .pagination{
+	margin:0px;
+	margin-bottom:30px;
+}
+#pagination-wrapper .pagination .page-item .page-link{
+	padding: 0px;
+	width: 24px;
+	height: 24px;
+	border-radius: 0px;
+	padding-left: 7px;
+	padding-top: 1px;
+	margin-right: 5px;
+	color: #212121;
+	background-color: #f8f8f8;
+	border-color: #e1e1e1;
+	font-weight: bold;
+}
+#pagination-wrapper .pagination .last-page .page-link{
+	width: auto;
+	padding-right: 7px;
+}
+#pagination-wrapper .pagination .page-item.active .page-link,
+#pagination-wrapper .pagination .page-item .page-link:hover
+{
+	color: #fff;
+	background-color: #90b44e;
 }

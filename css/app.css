@@ -238,7 +238,7 @@ body{
 	margin-top: 25px;
 	margin-bottom:25px;
 }
-.list-news .news-item .content-news:first-child{
+.list-news .news-item:first-child .content-news{
 	margin-top:10px;
 }
 .block-wrapper{

@@ -119,7 +119,28 @@
 					</nav>
 					<div class="left-content col-xs-8">
 						<div class="block-wrapper col-xs-12">
-							<div class="left-block-equal col-xs-6">
+							<div class="title-block-wrapper col-xs-12">
+								<div class="title-block">Các bài giảng pháp</div>
+								<!-- <a href="#" class="paddle-left">Xem thêm >></a> -->
+								<div class="dropdown dropdown-order-by">
+									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownOrderBy" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										Sắp xếp theo
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Tiêu chí 1</a>
+										<a class="dropdown-item" href="#">Tiêu chí 2</a>
+										
+									</div>
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+
+							<!-- <div class="left-block-equal col-xs-6">
 								<div class="img-block-large">
 									<img src="" alt="">
 								</div>
@@ -156,9 +177,166 @@
 									</div>
 								</div>
 								
+							</div> -->
+						</div>
+						<div class="block-wrapper block-split col-xs-12">
+							<div class="left-block-equal col-xs-6">
+								<div class="img-block-large">
+									<img src="" alt="">
+								</div>
+								<div class="block-news">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit
+									</div>
+								</div>
+							</div>
+							<div class="right-block-equal col-xs-6">
+								<div class="list-news">
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									
+								</div>
+								
 							</div>
 						</div>
 						<div class="block-wrapper col-xs-12">
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+								
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+								
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<nav id="pagination-wrapper">
+								<ul class="pagination">
+									<!-- <li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li> -->
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true">></span>
+										</a>
+									</li>
+									<li class="page-item last-page">
+										<a class="page-link" href="#">Trang cuối</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					<!-- 	<div class="block-wrapper col-xs-12">
 							<div class="title-block-wrapper col-xs-12">
 								<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 								<div class="title-block">Sách gối đầu tu tập</div>
@@ -351,7 +529,7 @@
 										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 									</div>
 								</div>
-						</div>
+						</div> -->
 						
 					</div>
 
