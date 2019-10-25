@@ -11,7 +11,7 @@
 	<title>Blog Template for Bootstrap</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/app.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/detail-page/detail.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/category-page/category.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -114,52 +114,31 @@
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-							<li class="breadcrumb-item"><a href="#">Các bài giảng pháp</a></li>
 							<li class="breadcrumb-item active" aria-current="page">Các bài giảng pháp</li>
 						</ol>
 					</nav>
 					<div class="left-content col-xs-8">
-						<div class="block-wrapper detail-post-wrapper col-xs-12">
-							<div class="header-post col-xs-12">
-								<div class="name-post">
-									Bài viết số 1
-								</div>
-								<div class="view-count">
-									<i class="glyphicon glyphicon-eye-open"></i>
-									<span>1234</span>
-								</div>
-							</div>
-							<div class="block-news content-post col-xs-12">
-								<div class="title-news">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-								</div>
-								<div class="img-block-large col-xs-8">
-									<img src="" alt="">
-								</div>
-								<div class="content-news col-xs-12">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo viverra maecenas accumsan lacus vel facilisis volutpat est. Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit sed. Orci porta non pulvinar neque laoreet suspendisse. Id donec ultrices tincidunt arcu non sodales neque. In hendrerit gravida rutrum quisque. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Id cursus metus aliquam eleifend. Etiam sit amet nisl purus. Sit amet nisl purus in mollis nunc sed. Non consectetur a erat nam at lectus urna duis convallis. Id faucibus nisl tincidunt eget nullam non nisi est sit.
-									<br>
-									<br>
-
-									Molestie at elementum eu facilisis. Ultrices sagittis orci a scelerisque purus semper eget duis. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Libero justo laoreet sit amet cursus sit amet dictum sit. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. Morbi quis commodo odio aenean sed adipiscing. Velit ut tortor pretium viverra suspendisse potenti nullam ac. Egestas pretium aenean pharetra magna ac placerat. Luctus accumsan tortor posuere ac ut consequat semper viverra. Sit amet nisl suscipit adipiscing bibendum est. Amet consectetur adipiscing elit duis. Justo nec ultrices dui sapien eget mi. Non tellus orci ac auctor augue mauris augue neque. Nisl purus in mollis nunc sed id semper risus. Id velit ut tortor pretium viverra suspendisse potenti nullam. Facilisis magna etiam tempor orci eu lobortis elementum.
-									
+						<div class="block-wrapper col-xs-12">
+							<div class="title-block-wrapper col-xs-12">
+								<div class="title-block">Các bài giảng pháp</div>
+								<!-- <a href="#" class="paddle-left">Xem thêm >></a> -->
+								<div class="dropdown dropdown-order-by">
+									<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownOrderBy" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="glyphicon glyphicon-chevron-down"></i>
+										Sắp xếp theo
+									</button>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+										<a class="dropdown-item" href="#">Tiêu chí 1</a>
+										<a class="dropdown-item" href="#">Tiêu chí 2</a>
+										
+									</div>
 								</div>
 							</div>
-							<div class="footer-post social-block col-xs-12">
-								<div class="share-block">
-									<a href="" class="btn-like">Thích <span>32</span></a>
-									<a href="" class="btn-share">Chia sẻ</a>
-								</div>
-								<div class="hastag-block">
-									<span>#Lorem ipsum</span>
-									<span>#dolor</span>
-									<span>#consectetur</span>
-									<span>#reprehenderit</span>
-									<span>#voluptate</span>
-									<span>velit esse</span>
+							<div class="block-news col-xs-12">
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 								</div>
 							</div>
-							
 
 							<!-- <div class="left-block-equal col-xs-6">
 								<div class="img-block-large">
@@ -200,8 +179,163 @@
 								
 							</div> -->
 						</div>
-						
-						
+						<div class="block-wrapper block-split col-xs-12">
+							<div class="left-block-equal col-xs-6">
+								<div class="img-block-large">
+									<img src="" alt="">
+								</div>
+								<div class="block-news">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit
+									</div>
+								</div>
+							</div>
+							<div class="right-block-equal col-xs-6">
+								<div class="list-news">
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									<div class="news-item">
+										<div class="content-news">
+											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<div class="block-wrapper col-xs-12">
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+								
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+								
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<nav id="pagination-wrapper">
+								<ul class="pagination">
+									<!-- <li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li> -->
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true">></span>
+										</a>
+									</li>
+									<li class="page-item last-page">
+										<a class="page-link" href="#">Trang cuối</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
 					<!-- 	<div class="block-wrapper col-xs-12">
 							<div class="title-block-wrapper col-xs-12">
 								<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
