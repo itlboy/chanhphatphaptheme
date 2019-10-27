@@ -1,0 +1,64 @@
+.content{
+	margin:0px;
+}
+.contact-wrapper .title-contact{
+	padding: 0px;
+	font-size: 18px;
+}
+.content-news{
+	margin-bottom: 30px;
+}
+.contact-detail .title-contact{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.address-contact{
+	margin-bottom: 15px;
+}
+.email-contact{
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.email-contact .content-email{
+	color: #79a627; 
+
+}
+.contact-form{
+	padding: 0px;
+}
+.contact-form .title-contact{
+	margin-top: 0px;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.form-contact input,
+.form-contact textarea{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+}
+.form-contact input{
+	height: 35px;
+}
+.form-contact textarea{
+	height: 155px;
+}
+.form-contact input::placeholder,
+.form-contact textarea::placeholder{
+	padding-left: 10px;
+	font-style: italic;
+}
+.form-contact button{
+	background-color: #79a627;
+	border: 0px;
+	border-radius: 2px;
+	color: #fff;
+	width: 100px;
+	height: 36px;
+    font-weight: bold;
+}
+.form-contact button:hover{
+	background-color: #699020;
+}
