@@ -11,7 +11,7 @@
 	<title>Blog Template for Bootstrap</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/app.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/contact-page/contact.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/keyword-page/keyword.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -114,37 +114,140 @@
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+							<li class="breadcrumb-item active" aria-current="page">Từ khóa</li>
 						</ol>
 					</nav>
 					<div class="left-content col-xs-8">
-						
-						<div class="block-wrapper contact-wrapper col-xs-12">
-							<div class="title-contact">Liên hệ</div>
-							<div class="content-news">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim. Proin fermentum leo vel orci porta. Nam at lectus urna duis. Aliquet lectus proin nibh nisl condimentum id venenatis a. Suspendisse ultrices gravida dictum fusce ut. Eu sem integer vitae justo eget magna fermentum iaculis. Eget arcu dictum varius duis at consectetur. Vulputate dignissim suspendisse in est ante in nibh. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Amet venenatis urna cursus eget. Id leo in vitae turpis massa sed elementum. Diam quis enim lobortis scelerisque fermentum. Aliquet porttitor lacus luctus accumsan tortor posuere. Convallis a cras semper auctor neque vitae tempus.
+					
+						<div class="block-wrapper col-xs-12">
+							<div class="title-block-wrapper col-xs-12">
+								<div class="title-block">Từ khóa: <span>Autem</span></div>
+								<!-- <a href="#" class="paddle-left">Xem thêm >></a> -->
+								
 							</div>
-							<div class="contact-detail">
-								<div class="title-contact">Chi Tiết Liên Hệ</div>
-								<div class="address-contact">Địa chỉ: tuhanhdungchanhphatphap, 123 Thái Hà, Đống Đa, Hà Nội</div>
-								<div class="phone-contact">(084) 123 9465</div>
-								<div class="fax-contact">(084) 123 12578(fax)</div>
-								<div class="email-contact">
-									<span>Email: </span>
-									<span class="content-email">contact@yoursite.com</span>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
 								</div>
 							</div>
-							<div class="contact-form col-xs-8">
-								<div class="title-contact">Gửi thư cho chúng tôi</div>
-								<form action="subcribe" method="post" class="form-contact">
-									<input type="text" name="txtName" placeholder="Name">
-									<input type="text" name="txtMail" placeholder="Email">
-									<textarea name="txtMessage" placeholder="Your Message" id="messgage-post"></textarea>
-									<button type="submit">Gửi thư</button>
-								</form>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+								
 							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+							</div>
+							<div class="block-item col-xs-12">
+								<div class="img-block-medium col-xs-2">
+									<img src="" alt="">
+								</div>
+								<div class="block-news col-xs-10">
+									<div class="title-news">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+									</div>
+									<div class="content-news">
+										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+									</div>
+								</div>
+								
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<div class="block-news col-xs-12">
+								<div class="title-news">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+								</div>
+								<div class="content-news">
+									Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+							<nav id="pagination-wrapper">
+								<ul class="pagination">
+									<!-- <li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li> -->
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true">></span>
+										</a>
+									</li>
+									<li class="page-item last-page">
+										<a class="page-link" href="#">Trang cuối</a>
+									</li>
+								</ul>
+							</nav>
 						</div>
-						
 						
 						
 					<!-- 	<div class="block-wrapper col-xs-12">
@@ -350,7 +453,7 @@
 							<input type="text" name="search-box" placeholder="Tìm kiếm">
 							<i class="icon-search glyphicon glyphicon-search"></i>
 						</div>
-						<div class="block-wrapper notification-block col-xs-12">
+						<!-- <div class="block-wrapper notification-block col-xs-12">
 							<div class="title-block-wrapper col-xs-12">
 								<div class="title-block">Thông báo</div>
 							</div>
@@ -373,7 +476,7 @@
 								</div>
 								
 							</div>
-						</div>
+						</div> -->
 						<!-- <div class="block-wrapper video-block col-xs-12">
 							<div class="title-block-wrapper col-xs-12">
 								<div class="title-block">Video</div>
@@ -458,7 +561,7 @@
 								Quis <span class="key-search">autem</span> vel eum iure reprehenderit, qui <span class="key-search">in ea</span>in ea voluptate velit <span class="key-search">essein ea</span> , quam nihil <span class="key-search">molestiae</span> consequatur
 							</div>
 						</div>
-						<div class="block-wrapper statitics-block col-xs-12">
+						<!-- <div class="block-wrapper statitics-block col-xs-12">
 							<div class="statitic-box col-xs-12">
 								<table>
 									<tr>
@@ -491,7 +594,7 @@
 								</table>
 								
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,47 @@
+.content{
+	margin:0px;
+}
+.breadcrumb{
+	margin-bottom: 20px;
+}
+.title-block-wrapper .title-block{
+	margin:0px;
+}
+.block-news .title-news{
+	margin-bottom: 10px;
+}
+.block-news .content-news{
+	margin: 0px;
+}
+.left-block-equal .block-news{
+	border: 0px;
+}
+.list-news .news-item .content-news{
+	margin-top: 20px;
+}
+.list-news .news-item:first-child .content-news{
+	margin-top: 0px;
+}
+.block-item .block-news{
+	border: 0px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-bottom: 0px;
+}
+.block-item .block-news .title-news{
+	margin-bottom: 5px;
+}
+.block-wrapper{
+	margin: 0px;
+}
+.block-split .left-block-equal .title-news{
+	margin: 0px;
+}
+.block-split .left-block-equal .block-news{
+	padding: 0px;
+	margin: 0px;
+}
+.block-split{
+	margin-bottom: 40px;
+}
