@@ -68,6 +68,7 @@ body{
 }
 .logo-content{
 	text-align: center;
+	padding: 0px;
 }
 .logo-content .logo-image-wraper{
 	width: 175px;
@@ -75,6 +76,7 @@ body{
 	background-color: #fdeedd;
 	border-radius: 50%;
 	padding: 10px;
+	margin: 0 auto;
 }
 .logo-content .logo-image-wraper .logo-image{
 	height: 155px;
