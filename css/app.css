@@ -1,5 +1,14 @@
+@font-face {
+    font-family: 'VNF Stag Sans Book';
+    src: url('VNFStagSansBook.woff2') format('woff2'),
+        url('VNFStagSansBook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
 	background-color: #f5f7f1;
+	font-family: 'VNF Stag Sans Book'
 }
 .container{
 	background-color: #fff;
