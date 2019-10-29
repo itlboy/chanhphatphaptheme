@@ -258,7 +258,6 @@
 				</div>
 			</div>
 		<?php
-		the_content();
 	endwhile; endif;
 	get_footer();
 	?>

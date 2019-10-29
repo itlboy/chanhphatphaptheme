@@ -69,11 +69,16 @@
 					
 				</div>
 				<div class="menu-wrapper col-lg-12">
+					<?php 
+					$menus = wp_get_nav_menu_items('top-menu');
+					// var_dump($menus);die
+					?>
 					<ul class="nav nav-tabs">
-						<li class="nav-item col-lg-1">
-							<a class="nav-link active" href="#">Trang chủ</a>
-						</li>
+						<?php foreach ($menus as $menu) {?>
 						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="<?php echo $menu->url ?>"><?php echo $menu->title ?></a>
+						</li>
+						<!-- <li class="nav-item col-lg-2">
 							<a class="nav-link" href="#">Sách gối đầu tu tập</a>
 						</li>
 						<li class="nav-item dropdown col-lg-2">
@@ -95,7 +100,8 @@
 						</li>
 						<li class="nav-item col-lg-1">
 							<a class="nav-link" href="#">Video/ audio</a>
-						</li>
+						</li> -->
+					<?php } ?>
 					</ul>
 				</div>
 			</header>
