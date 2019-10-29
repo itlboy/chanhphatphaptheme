@@ -5,11 +5,424 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+	font-family: 'ztb3';
+	src:url('ztb3.eot?xhnlbl');
+	src:url('ztb3.eot?#iefixxhnlbl') format('embedded-opentype'),
+		url('ztb3.ttf?xhnlbl') format('truetype'),
+		url('ztb3.woff?xhnlbl') format('woff'),
+		url('ztb3.svg?xhnlbl#ztb') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.icon-0:before {
+  content: "\e900";
+}
+.icon-001:before {
+  content: "\e901";
+}
+.icon-002:before {
+  content: "\e902";
+}
+.icon-003:before {
+  content: "\e903";
+}
+.icon-004:before {
+  content: "\e904";
+}
+.icon-005:before {
+  content: "\e905";
+}
+.icon-006:before {
+  content: "\e906";
+}
+.icon-007:before {
+  content: "\e907";
+}
+.icon-008:before {
+  content: "\e908";
+}
+.icon-009:before {
+  content: "\e909";
+}
+.icon-010:before {
+  content: "\e90a";
+}
+.icon-011:before {
+  content: "\e90b";
+}
+.icon-012:before {
+  content: "\e90c";
+}
+.icon-013:before {
+  content: "\e90d";
+}
+.icon-014:before {
+  content: "\e90e";
+}
+.icon-015:before {
+  content: "\e90f";
+}
+.icon-016:before {
+  content: "\e910";
+}
+.icon-017:before {
+  content: "\e911";
+}
+.icon-018:before {
+  content: "\e912";
+}
+.icon-019:before {
+  content: "\e913";
+}
+.icon-020:before {
+  content: "\e914";
+}
+.icon-021:before {
+  content: "\e915";
+}
+.icon-022:before {
+  content: "\e916";
+}
+.icon-023:before {
+  content: "\e917";
+}
+.icon-024:before {
+  content: "\e918";
+}
+.icon-025:before {
+  content: "\e919";
+}
+.icon-026:before {
+  content: "\e91a";
+}
+.icon-027:before {
+  content: "\e91b";
+}
+.icon-028:before {
+  content: "\e91c";
+}
+.icon-029:before {
+  content: "\e91d";
+}
+.icon-030:before {
+  content: "\e91e";
+}
+.icon-031:before {
+  content: "\e91f";
+}
+.icon-032:before {
+  content: "\e920";
+}
+.icon-033:before {
+  content: "\e921";
+}
+.icon-034:before {
+  content: "\e922";
+}
+.icon-035:before {
+  content: "\e923";
+}
+.icon-036:before {
+  content: "\e924";
+}
+.icon-037:before {
+  content: "\e925";
+}
+.icon-038:before {
+  content: "\e926";
+}
+.icon-039:before {
+  content: "\e927";
+}
+.icon-040:before {
+  content: "\e928";
+}
+.icon-041:before {
+  content: "\e929";
+}
+.icon-042:before {
+  content: "\e92a";
+}
+.icon-043:before {
+  content: "\e92b";
+}
+.icon-044:before {
+  content: "\e92c";
+}
+.icon-045:before {
+  content: "\e92d";
+}
+.icon-046:before {
+  content: "\e92e";
+}
+.icon-047:before {
+  content: "\e92f";
+}
+.icon-048:before {
+  content: "\e930";
+}
+.icon-049:before {
+  content: "\e931";
+}
+.icon-050:before {
+  content: "\e932";
+}
+.icon-051:before {
+  content: "\e933";
+}
+.icon-052:before {
+  content: "\e934";
+}
+.icon-053:before {
+  content: "\e935";
+}
+.icon-054:before {
+  content: "\e936";
+}
+.icon-055:before {
+  content: "\e937";
+}
+.icon-056:before {
+  content: "\e938";
+}
+.icon-057:before {
+  content: "\e939";
+}
+.icon-058:before {
+  content: "\e93a";
+}
+.icon-059:before {
+  content: "\e93b";
+}
+.icon-060:before {
+  content: "\e93c";
+}
+.icon-061:before {
+  content: "\e93d";
+}
+.icon-062:before {
+  content: "\e93e";
+}
+.icon-063:before {
+  content: "\e93f";
+}
+.icon-064:before {
+  content: "\e940";
+}
+.icon-065:before {
+  content: "\e941";
+}
+.icon-066:before {
+  content: "\e942";
+}
+.icon-067:before {
+  content: "\e943";
+}
+.icon-068:before {
+  content: "\e944";
+}
+.icon-069:before {
+  content: "\e945";
+}
+.icon-070:before {
+  content: "\e946";
+}
+.icon-071:before {
+  content: "\e947";
+}
+.icon-072:before {
+  content: "\e948";
+}
+.icon-073:before {
+  content: "\e949";
+}
+.icon-074:before {
+  content: "\e94a";
+}
+.icon-075:before {
+  content: "\e94b";
+}
+.icon-076:before {
+  content: "\e94c";
+}
+.icon-077:before {
+  content: "\e94d";
+}
+.icon-078:before {
+  content: "\e94e";
+}
+.icon-079:before {
+  content: "\e94f";
+}
+.icon-080:before {
+  content: "\e950";
+}
+.icon-081:before {
+  content: "\e951";
+}
+.icon-082:before {
+  content: "\e952";
+}
+.icon-083:before {
+  content: "\e953";
+}
+.icon-084:before {
+  content: "\e954";
+}
+.icon-085:before {
+  content: "\e955";
+}
+.icon-086:before {
+  content: "\e956";
+}
+.icon-087:before {
+  content: "\e957";
+}
+.icon-088:before {
+  content: "\e958";
+}
+.icon-089:before {
+  content: "\e959";
+}
+.icon-090:before {
+  content: "\e95a";
+}
+.icon-091:before {
+  content: "\e95b";
+}
+.icon-092:before {
+  content: "\e95c";
+}
+.icon-094:before {
+  content: "\e95d";
+}
+.icon-095:before {
+  content: "\e95e";
+}
+.icon-096:before {
+  content: "\e95f";
+}
+.icon-097:before {
+  content: "\e960";
+}
+.icon-098:before {
+  content: "\e961";
+}
+.icon-099:before {
+  content: "\e962";
+}
+.icon-100:before {
+  content: "\e963";
+}
+.icon-101:before {
+  content: "\e964";
+}
+.icon-102:before {
+  content: "\e965";
+}
+.icon-103:before {
+  content: "\e966";
+}
+.icon-104:before {
+  content: "\e967";
+}
+.icon-105:before {
+  content: "\e968";
+}
+.icon-106:before {
+  content: "\e969";
+}
+.icon-107:before {
+  content: "\e96a";
+}
+.icon-108:before {
+  content: "\e96b";
+}
+.icon-109:before {
+  content: "\e96c";
+}
+.icon-110:before {
+  content: "\e96d";
+}
+.icon-111:before {
+  content: "\e96e";
+}
+.icon-112:before {
+  content: "\e96f";
+}
+.icon-113:before {
+  content: "\e970";
+}
+.icon-114:before {
+  content: "\e971";
+}
+.icon-115:before {
+  content: "\e972";
+}
+.icon-116:before {
+  content: "\e973";
+}
+.icon-117:before {
+  content: "\e974";
+}
+.icon-119:before {
+  content: "\e975";
+}
+.icon-120:before {
+  content: "\e976";
+}
+.icon-121:before {
+  content: "\e977";
+}
+.icon-122:before {
+  content: "\e978";
+}
+.icon-123:before {
+  content: "\e979";
+}
+.icon-124:before {
+  content: "\e97a";
+}
+.icon-125:before {
+  content: "\e97b";
+}
+.icon-126:before {
+  content: "\e97c";
+}
+.icon-127:before {
+  content: "\e97d";
+}
+.icon-128:before {
+  content: "\e97e";
+}
+.icon-129:before {
+  content: "\e97f";
+}
+.icon-130:before {
+  content: "\e980";
+}
+.icon-131:before {
+  content: "\e981";
+}
+.icon-132:before {
+  content: "\e982";
+}
+.icon-133:before {
+  content: "\e983";
+}
+.icon-zotabox_logo:before {
+  content: "\e984";
+  color: #db2c2c;
+}
+
 
 body{
 	background-color: #f5f7f1;
 	font-family: 'VNF Stag Sans Book'
 }
+
+
 .container{
 	background-color: #fff;
 	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.05);
@@ -382,6 +795,7 @@ body{
 .right-content .social-share-wrapper .list-social-btn{
 	margin-top: 15px;
 	padding: 0px;
+
 }
 .right-content .social-share-wrapper .list-social-btn .social-btn-item{
 	float: left;
@@ -389,6 +803,12 @@ body{
 	width:50px;
 	border-radius: 3px;
 	margin-right: 10px;
+	font-family: 'ztb3';
+	color: #fff;
+	line-height: 50px;
+	font-size: 30px;
+    padding-left: 10px;
+    cursor: pointer;
 }
 .list-social-btn .social-btn-item:nth-child(1){
 	background-color: #3b5998;

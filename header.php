@@ -26,17 +26,76 @@
 		<div class="container">
 			<header>
 				<div class="row">
-					<div class="col-12">
-						<div class="contact-address">	
-							
-						</div>
+					<div class="contact-address col-lg-12">	
+						<div class="contact-content">Phone: (0123) 456 789 021 | Email: tuhanhchanhphatphap@gmail.com</div>
+						<div class="lang-page">
+							<a href="#">VN</a> | <a href="#">EN</a>
+						</div>	
+
 					</div>
 				</div>
+				<div class="row">
+					<div class="logo-wrapper col-lg-12">
+						<div class="logo-title col-lg-5">
+							<div class="title-top">Dẫn dắt hành giả</div>
+							<div class="title-bottom">hiểu rõ chánh pháp</div>
+							
+						</div>
+						<div class="logo-content col-lg-2">
+							<div class="logo-image-wraper">
+								<div class="logo-image">
+									<img src="<?php echo get_stylesheet_directory_uri() ?>/images/phathien.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="logo-title col-lg-5">
+							<div class="title-top">Hướng dẫn hành giả</div>
+							<div class="title-bottom">tu hành đạt được chứng quả</div>
+						</div>
 
-
-
-
+					</div>
+					<div class="title-content col-lg-12">tu hành đúng chánh phật pháp</div>
+				</div>
+				<div class="row">
+					<div class="slide-show-wrapper col-lg-12">
+						<img class="col-lg-12" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide.png" alt="">
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="slogan-wrapper col-lg-12">
+						Một cây làm chẳng lên non - Ba cây chụm lại nên hòn núi cao
+					</div>
+					
+				</div>
+				<div class="menu-wrapper col-lg-12">
+					<ul class="nav nav-tabs">
+						<li class="nav-item col-lg-1">
+							<a class="nav-link active" href="#">Trang chủ</a>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">Sách gối đầu tu tập</a>
+						</li>
+						<li class="nav-item dropdown col-lg-2">
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">pháp thực hành</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Pháp thực hành link 01</a>
+								<a class="dropdown-item" href="#">Pháp thực hành link 02</a>
+								<a class="dropdown-item" href="#">Pháp thực hành link 03</a>
+							</div>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">các bài giảng pháp</a>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">thầy thanh thiện</a>
+						</li>
+						<li class="nav-item col-lg-2">
+							<a class="nav-link" href="#">hành giả hồi đạo</a>
+						</li>
+						<li class="nav-item col-lg-1">
+							<a class="nav-link" href="#">Video/ audio</a>
+						</li>
+					</ul>
+				</div>
 			</header>
-
-
-		
