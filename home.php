@@ -1,3 +1,7 @@
+<?php
+	get_header();
+	if ( have_posts() ) : while ( have_posts() ) : the_post();
+		?>
 <div class="main-content col-lg-12">
 	<div class="notify-wrapper col-lg-12">
 		<div class="notify-label col-lg-2">
@@ -398,3 +402,7 @@
 			</div>
 		</div>
 	</div>
+	<?php
+	endwhile; endif;
+	get_footer();
+	?>

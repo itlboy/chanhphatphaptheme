@@ -101,15 +101,7 @@
 				</div>
 			</header>
 			<div class="main-content col-lg-12">
-			<!-- 	<div class="notify-wrapper col-lg-12">
-					<div class="notify-label col-lg-2">
-						Thông báo mới: 
-					</div>
-					<div class="notify-content col-lg-10">
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-					</div>
-
-				</div> -->
+			
 				<div class="content col-xs-12">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
@@ -140,44 +132,7 @@
 								</div>
 							</div>
 
-							<!-- <div class="left-block-equal col-xs-6">
-								<div class="img-block-large">
-									<img src="" alt="">
-								</div>
-								<div class="block-news">
-									<div class="title-news">
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit
-									</div>
-									<div class="content-news">
-										Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-									</div>
-								</div>
-							</div>
-							<div class="right-block-equal col-xs-6">
-								<div class="list-news">
-									<div class="news-item">
-										<div class="content-news">
-											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-										</div>
-									</div>
-									<div class="news-item">
-										<div class="content-news">
-											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-										</div>
-									</div>
-									<div class="news-item">
-										<div class="content-news">
-											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-										</div>
-									</div>
-									<div class="news-item">
-										<div class="content-news">
-											Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-										</div>
-									</div>
-								</div>
-								
-							</div> -->
+							
 						</div>
 						<div class="block-wrapper block-split col-xs-12">
 							<div class="left-block-equal col-xs-6">

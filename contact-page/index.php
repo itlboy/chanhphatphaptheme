@@ -101,15 +101,7 @@
 				</div>
 			</header>
 			<div class="main-content col-lg-12">
-			<!-- 	<div class="notify-wrapper col-lg-12">
-					<div class="notify-label col-lg-2">
-						Thông báo mới: 
-					</div>
-					<div class="notify-content col-lg-10">
-						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-					</div>
-
-				</div> -->
+			
 				<div class="content col-xs-12">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">

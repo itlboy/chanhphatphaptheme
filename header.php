@@ -70,38 +70,17 @@
 				</div>
 				<div class="menu-wrapper col-lg-12">
 					<?php 
+
+					wp_nav_menu(
+						array(
+							'menu'=>'top-menu',
+							'menu_class'=>'nav nav-tabs',
+						)
+					);
+
 					$menus = wp_get_nav_menu_items('top-menu');
 					// var_dump($menus);die
 					?>
-					<ul class="nav nav-tabs">
-						<?php foreach ($menus as $menu) {?>
-						<li class="nav-item col-lg-2">
-							<a class="nav-link" href="<?php echo $menu->url ?>"><?php echo $menu->title ?></a>
-						</li>
-						<!-- <li class="nav-item col-lg-2">
-							<a class="nav-link" href="#">Sách gối đầu tu tập</a>
-						</li>
-						<li class="nav-item dropdown col-lg-2">
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">pháp thực hành</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="#">Pháp thực hành link 01</a>
-								<a class="dropdown-item" href="#">Pháp thực hành link 02</a>
-								<a class="dropdown-item" href="#">Pháp thực hành link 03</a>
-							</div>
-						</li>
-						<li class="nav-item col-lg-2">
-							<a class="nav-link" href="#">các bài giảng pháp</a>
-						</li>
-						<li class="nav-item col-lg-2">
-							<a class="nav-link" href="#">thầy thanh thiện</a>
-						</li>
-						<li class="nav-item col-lg-2">
-							<a class="nav-link" href="#">hành giả hồi đạo</a>
-						</li>
-						<li class="nav-item col-lg-1">
-							<a class="nav-link" href="#">Video/ audio</a>
-						</li> -->
-					<?php } ?>
-					</ul>
+					
 				</div>
 			</header>
