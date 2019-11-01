@@ -1,4 +1,4 @@
-<div class="right-content col-xs-4">
+<!-- <div class="right-content col-xs-4">
   <div class="search-box col-xs-12">
     <input type="text" name="search-box" placeholder="Tìm kiếm">
     <i class="icon-search glyphicon glyphicon-search"></i>
@@ -69,4 +69,12 @@
 
     </div>
   </div>
-</div>
+</div> -->
+
+<?php 
+if ( is_active_sidebar('main-sidebar') ) {
+  dynamic_sidebar( 'main-sidebar' );
+} else {
+  _e('This is widget area. Go to Appearance -> Widgets to add some widgets.', 'thachpham');
+}
+ ?>
