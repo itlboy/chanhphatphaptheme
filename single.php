@@ -1,6 +1,14 @@
 	<?php
 	get_header();
+	wp_enqueue_style( 'style', get_template_directory_uri() . '/detail-page/detail.css');
+
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
+		?>
+		<?php 
+		$post_id = get_the_ID();
+		
+		$categories = get_the_category('1108') ;
+		$post_data= get_post();
 		?>
 		<div class="main-content col-lg-12">
 			
@@ -8,15 +16,17 @@
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
 							<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
-							<li class="breadcrumb-item"><a href="#">Các bài giảng pháp</a></li>
-							<li class="breadcrumb-item active" aria-current="page">Các bài giảng pháp</li>
+							<?php if(count($categories) == 1) {?>
+							<li class="breadcrumb-item"><a href="#"><?php echo $categories[0]->name; ?></a></li>
+							<?php }?>
+							<li class="breadcrumb-item active" aria-current="page"><?php echo $post_data->post_title ?></li>
 						</ol>
 					</nav>
 					<div class="left-content col-xs-8">
 						<div class="block-wrapper detail-post-wrapper col-xs-12">
 							<div class="header-post col-xs-12">
 								<div class="name-post">
-									Bài viết số 1
+									<?php echo $post_data->post_title ?>
 								</div>
 								<div class="view-count">
 									<i class="glyphicon glyphicon-eye-open"></i>
@@ -24,12 +34,15 @@
 								</div>
 							</div>
 							<div class="block-news content-post col-xs-12">
-								<div class="title-news">
+								<!-- <div class="title-news">
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-								</div>
-								<div class="img-block-large col-xs-8">
-									<img src="" alt="">
-								</div>
+								</div> -->
+								<?php if (has_post_thumbnail( $post->ID ) ): ?>
+									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+									<div id="custom-bg" class="img-block-large col-xs-8"  style="background-image: url('<?php echo $image[0]; ?>')">
+
+									</div>
+								<?php endif; ?>
 								<div class="content-news col-xs-12">
 								<?php the_content(); ?>
 								</div>

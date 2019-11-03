@@ -35,6 +35,7 @@
 .detail-post-wrapper .block-news .img-block-large{
 	width: 70%;
 	min-height: 350px;
+	background-size: cover;
 }
 .detail-post-wrapper .block-news .content-news{
 	padding: 0px;
