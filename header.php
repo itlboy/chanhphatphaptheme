@@ -84,3 +84,7 @@
 					
 				</div>
 			</header>
+			<div class="main-content col-lg-12">
+			
+				<div class="content col-xs-12">
+					

@@ -94,4 +94,27 @@
             add_action ( 'init', 'thachpham_theme_setup' );
 
         }
-        ?>
+?>
+
+<?php 
+if ( ! function_exists( 'prefix_modify_query_order' ) ) {
+
+    function prefix_modify_query_order( $query ) {
+      if ( is_main_query() ) {
+        echo 123;
+        $args =  array( 'title' => 'ASC' );
+
+        $query->set( 'orderby', $args );
+        }
+    }
+}
+
+?>
+
+
+<?php 
+add_action( 'wp_enqueue_scripts', 'my_custom_script_load' );
+function my_custom_script_load(){
+  wp_enqueue_script( 'my-custom-script', THEME_URL. '/js/app.js', array( 'jquery' ) );
+}
+ ?>

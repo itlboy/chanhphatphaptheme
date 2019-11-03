@@ -587,7 +587,7 @@ body{
 	background-color: #79a627;
 	border: 1px solid #e4e7df;
     border-right: 0px;
-    width: 16.6666%;
+    /*width: 16.6666%;*/
 }
 
 .menu-wrapper .nav-tabs .menu-item:last-child{
@@ -701,6 +701,7 @@ body{
 
 .right-content{
 	padding-right: 0px;
+	list-style: none;
 }
 .left-block-equal{
 	padding-left: 0px;
