@@ -74,13 +74,10 @@
 				
 			</footer>
 
-
 		</div> <!-- /.container -->
 	</div> 
 
-
-
-	<?php wp_enqueue_script( 'script', get_template_directory_uri(). '/js/app.js' ); ?>
+	<?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.1, true); ?>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<?php wp_footer(); ?>

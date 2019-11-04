@@ -6,9 +6,14 @@
 		?>
 		<?php 
 		$post_id = get_the_ID();
-		
-		$categories = get_the_category('1108') ;
+		$categories = get_the_category($post_id) ;
 		$post_data= get_post();
+		setPostViews($post_id);
+
+		$countView = getPostViews($post_id);
+		//get related
+
+		$related = get_posts( array( 'category__in' => wp_get_post_categories($post_id), 'numberposts' => 5, 'post__not_in' => array($post_id) ) );
 		?>
 		<div class="main-content col-lg-12">
 			
@@ -30,7 +35,7 @@
 								</div>
 								<div class="view-count">
 									<i class="glyphicon glyphicon-eye-open"></i>
-									<span>1234</span>
+									<span><?php echo $countView; ?></span>
 								</div>
 							</div>
 							<div class="block-news content-post col-xs-12">

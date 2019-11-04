@@ -11,12 +11,16 @@
 .detail-post-wrapper .header-post .name-post{
 	font-weight: bold;
 	font-size: 20px;
+	padding-right: 50px;	
 }
 .detail-post-wrapper .header-post .view-count{
 	position: absolute;
 	right: 0px;
 	top: 0px;
 	line-height: 28px
+}
+.detail-post-wrapper .header-post .view-count i{
+	top: 3px;
 }
 .detail-post-wrapper .header-post .view-count span{
 	font-size: 12px;

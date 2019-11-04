@@ -1,21 +1,7 @@
 <?php
 get_header();
 $cats = get_categories();
-foreach ($cats as $key => $cat) {
-	$catID = $cat->term_id;
-	query_posts("cat=$catID&post_per_page=4");
-	if ( have_posts() ) : 
 
-		while ( have_posts() ) :the_post(); 
-
-			echo the_permalink().'<br>';
-
-
-		endwhile;
-		
-	endif;	
-
-}
 ?>
 <div class="notify-wrapper col-lg-12">
 	<div class="notify-label col-lg-2">
@@ -68,18 +54,22 @@ foreach ($cats as $key => $cat) {
 
 			</div>
 		</div>
+		<?php 
+			$dataCate = get_post_by_slug_category('sach-goi-dau-tu-tap',2);
+			var_dump($dataCate['posts'][0])
+		 ?>
 		<div class="block-wrapper col-xs-12">
 			<div class="title-block-wrapper col-xs-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Sách gối đầu tu tập</div>
-				<a href="#" class="paddle-left">Xem thêm >></a>
+				<a href="<?php echo $dataCate['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
 			<div class="left-block-equal col-xs-6">
 				<div class="img-block-large">
 					<img src="" alt="">
 				</div>
 				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					<?php echo $dataCate['posts'][0]->title; ?>
 				</div>
 
 			</div>
@@ -88,7 +78,7 @@ foreach ($cats as $key => $cat) {
 					<img src="" alt="">
 				</div>
 				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					<?php echo $dataCate['posts'][1]->title; ?>
 				</div>
 
 			</div>
