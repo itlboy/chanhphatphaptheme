@@ -1,6 +1,15 @@
 <?php
 get_header();
 $cats = get_categories();
+// var_dump(get_terms( 'nav_menu', array( 'hide_empty' => true ) ));die;
+$args = array
+    (
+        'post_type' => 'attachment',
+        'post_mime_type' => 'audio',
+        'numberposts' => 1
+    );
+$audiofiles = get_posts($args);
+$dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 
 ?>
 <div class="notify-wrapper col-lg-12">
@@ -10,27 +19,42 @@ $cats = get_categories();
 	<div class="notify-content col-lg-10">
 		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 	</div>
-
 </div>
 <div class="content col-xs-12">
 	<div class="left-content col-xs-8">
 		<div class="block-wrapper col-xs-12">
 			<div class="left-block-equal col-xs-6">
-				<div class="img-block-large">
-					<img src="" alt="">
-				</div>
+				<?php $post1 = $dataCateSpecial['posts'][0] ?>
+				<?php if (has_post_thumbnail( $post1->ID ) ): ?>
+					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post1->ID ), 'single-post-thumbnail' ); ?>
+					<div class="img-block-large" style="background-image: url('<?php echo $image[0]; ?>')">
+						<img src="" alt="">
+					</div>
+				<?php endif; ?>
 				<div class="block-news">
 					<div class="title-news">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						<a href="<?php echo get_permalink($post1->ID) ?>" ><?php echo $post1->post_title; ?></a>
 					</div>
 					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+						<?php 
+						$content = $post1->post_content;
+						$content = strip_tags($content);
+						echo substr_full_word($content,200)
+						?>
 					</div>
 				</div>
 			</div>
 			<div class="right-block-equal col-xs-6">
 				<div class="list-news">
-					<div class="news-item">
+					<?php foreach ($dataCateSpecial['posts'] as $key => $post) {?>
+						<?php if($key>0){ ?>
+						<div class="news-item">
+							<div class="content-news">
+								<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
+							</div>
+						</div>
+					<?php }} ?>
+					<!-- <div class="news-item">
 						<div class="content-news">
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
 						</div>
@@ -44,12 +68,7 @@ $cats = get_categories();
 						<div class="content-news">
 							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
 						</div>
-					</div>
-					<div class="news-item">
-						<div class="content-news">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-						</div>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -259,36 +278,22 @@ $cats = get_categories();
 				<div class="title-block">hành giả hỏi đạo</div>
 				<a href="<?php echo $dataCate5['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
-			<div class="news-item col-xs-12">
-				<div class="title-news">
-					<div class="double-padles">>></div>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-				</div>
+			<?php foreach ($dataCate5['posts'] as $key => $post) { ?>
+				<div class="news-item col-xs-12">
+					<div class="title-news">
+						<a href="<?php echo get_permalink($post->ID) ?>" ><span class="double-padles">>></span><?php echo $post->post_title; ?></a>
+					</div>
 
-				<div class="content-news">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					<div class="content-news">
+						<?php 
+						$content = $post->post_content;
+						$content = strip_tags($content);
+						echo substr_full_word($content,300)
+						
+						?>
+					</div>
 				</div>
-			</div>
-			<!-- <div class="news-item col-xs-12">
-				<div class="title-news">
-					<div class="double-padles">>></div>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-				</div>
-
-				<div class="content-news ">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-			</div>
-			<div class="news-item col-xs-12">
-				<div class="title-news">
-					<div class="double-padles">>></div>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-				</div>
-
-				<div class="content-news">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-			</div> -->
+			<?php } ?>
 		</div>
 
 	</div>

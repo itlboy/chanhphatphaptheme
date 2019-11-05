@@ -70,7 +70,10 @@
     </div>
   </div>
 </div> -->
-
+<?php 
+  // $widgets = the_widget('custom_html-2');
+  // var_dump($widgets);die; 
+ ?>
 <?php 
 if ( is_active_sidebar('main-sidebar') ) {
   dynamic_sidebar( 'main-sidebar' );

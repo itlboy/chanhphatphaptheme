@@ -715,6 +715,7 @@ body{
 	height: 210px;
 	background-color: #ebebeb;
 	margin-bottom: 20px;
+	background-size: cover;
 }
 
 .title-news{
@@ -749,7 +750,7 @@ body{
 .list-news .news-item .content-news a{
 	text-decoration: none;
 	color:#403939;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 .list-news .news-item .content-news a:hover{
 	color: #000;
@@ -786,6 +787,7 @@ body{
 	height: 85px;
 	background-color: #ebebeb;
 	float: left;
+	background-size: cover;
 }
 .block-item{
 	padding: 0px;
@@ -1146,4 +1148,32 @@ body{
 {
 	color: #fff;
 	background-color: #90b44e;
+}
+
+/*style searchform*/
+.search-form label{
+	width:100%;
+}
+.search-form label .search-field{
+	height: 40px;
+	width: 100%;
+	border: 0px;
+	background-color: #f3f3f3;
+	padding-left: 15px;
+}
+.search-form .search-submit{
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	background-color: transparent;
+	border: 0px;
+	z-index: 1;
+	height: 40px;
+	width: 20px;
+}
+.search-form .icon-search{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	color: #b2b2b2;
 }

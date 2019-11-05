@@ -6,6 +6,7 @@
   **/
   define( 'THEME_URL', get_stylesheet_directory() );
   define( 'CORE', THEME_URL . '/core' );
+  define( 'CAT_SPECIAL_NAME', 'Cac-bai-giang-phap');
 
 /**
   @ Load file /core/init.php
@@ -162,12 +163,12 @@ function posts_custom_column_views($column_name, $id){
         echo getPostViews(get_the_ID());
     }
 }
-add_filter('get_search_form', 'my_search_form');
+// add_filter('get_search_form', 'my_search_form');
  
-function my_search_form($text) {
-     $text = str_replace('value="Search"', 'value=""', $text);
-    return $text;
-}
+// function my_search_form($text) {
+//      $text = str_replace('value="Search"', 'value=""', $text);
+//     return $text;
+// }
 if ( ! function_exists( 'get_post_by_slug_category' ) ) {
 
   function get_post_by_slug_category( $slugName ,$numPost) {
@@ -189,8 +190,12 @@ if ( ! function_exists( 'substr_full_word' ) ) {
     $newstr = substr($str, 0, $maxlen);
     if ( substr($newstr,-1,1) != ' ' ) $newstr = substr($newstr, 0, strrpos($newstr, " "));
 
-    return $newstr;
+    return $newstr.'...';
   }
 }
+function wpdocs_after_setup_theme() {
+    add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 
 ?>
