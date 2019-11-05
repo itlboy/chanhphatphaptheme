@@ -44,8 +44,8 @@
 								</div> -->
 								<?php if (has_post_thumbnail( $post->ID ) ): ?>
 									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-									<div id="custom-bg" class="img-block-large col-xs-8"  style="background-image: url('<?php echo $image[0]; ?>')">
-
+									<div id="custom-bg" class="img-block-large col-xs-12">
+										<img src="<?php echo $image[0]; ?>" alt="">
 									</div>
 								<?php endif; ?>
 								<div class="content-news col-xs-12">

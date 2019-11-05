@@ -746,6 +746,14 @@ body{
 .list-news .news-item:first-child .content-news{
 	margin-top:10px;
 }
+.list-news .news-item .content-news a{
+	text-decoration: none;
+	color:#403939;
+	font-weight: bold;
+}
+.list-news .news-item .content-news a:hover{
+	color: #000;
+}
 .block-wrapper{
 	margin-bottom: 30px;
 }
@@ -795,6 +803,13 @@ body{
 
 .block-news .title-news{
 	margin: 0px;
+}
+.title-news a{
+	color: #403939;
+	text-decoration: none;
+}
+.title-news a:hover{
+	color: #000;
 }
 
 .img-block-small{

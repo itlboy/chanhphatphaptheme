@@ -55,21 +55,20 @@ $cats = get_categories();
 			</div>
 		</div>
 		<?php 
-			$dataCate = get_post_by_slug_category('sach-goi-dau-tu-tap',2);
-			var_dump($dataCate['posts'][0])
+			$dataCate1 = get_post_by_slug_category('sach-goi-dau-tu-tap',2);
 		 ?>
 		<div class="block-wrapper col-xs-12">
 			<div class="title-block-wrapper col-xs-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Sách gối đầu tu tập</div>
-				<a href="<?php echo $dataCate['link']; ?>" class="paddle-left">Xem thêm >></a>
+				<a href="<?php echo $dataCate1['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
 			<div class="left-block-equal col-xs-6">
 				<div class="img-block-large">
 					<img src="" alt="">
 				</div>
 				<div class="title-news">
-					<?php echo $dataCate['posts'][0]->title; ?>
+					<?php echo $dataCate1['posts'][0]->title; ?>
 				</div>
 
 			</div>
@@ -78,31 +77,63 @@ $cats = get_categories();
 					<img src="" alt="">
 				</div>
 				<div class="title-news">
-					<?php echo $dataCate['posts'][1]->title; ?>
+					<?php echo $dataCate1['posts'][1]->title; ?>
 				</div>
 
 			</div>
 		</div>
+		<?php 
+			$dataCate2 = get_post_by_slug_category('Cac-bai-giang-phap',3);
+		 ?>
 		<div class="block-wrapper col-xs-12">
 			<div class="title-block-wrapper col-xs-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Các bài giảng pháp</div>
-				<a href="#" class="paddle-left">Xem thêm >></a>
+				<a href="<?php echo $dataCate2['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
-			<div class="block-item col-xs-12">
-				<div class="img-block-medium col-xs-2">
-					<img src="" alt="">
-				</div>
-				<div class="block-news col-xs-10">
-					<div class="title-news">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
+			<?php 
+			foreach ($dataCate2['posts'] as $key => $post) {
+				if (has_post_thumbnail( $post->ID ) ): 
+					?>
+					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+					<div class="block-item col-xs-12">
+						<div class="img-block-medium col-xs-2 " style="background-image: url('<?php echo $image[0]; ?>')">
+
+						</div>
+						<div class="block-news col-xs-10">
+							<div class="title-news">
+								<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
+							</div>
+							<div class="content-news">
+								<?php 
+								$content = $post->post_content;
+								$content = strip_tags($content);
+								echo substr_full_word($content,200)
+								?>
+							</div>
+						</div>
 					</div>
-					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-					</div>
-				</div>
+
+					<?php else: ?>
+						<div class="block-item col-xs-12">
+							<div class="block-news">
+								<div class="title-news">
+									<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
+								</div>
+								<div class="content-news">
+									<?php 
+									$content = $post->post_content;
+									$content = strip_tags($content);
+									echo substr_full_word($content,200)
+									?>
+								</div>
+							</div>
+
 			</div>
-			<div class="block-item col-xs-12">
+
+			<?php endif;} ?>
+			
+			<!-- <div class="block-item col-xs-12">
 				<div class="img-block-medium col-xs-2">
 					<img src="" alt="">
 				</div>
@@ -127,25 +158,29 @@ $cats = get_categories();
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 		</div>
+		<?php 
+			$dataCate3 = get_post_by_slug_category('phap-thuc-hanh',5);
+
+		 ?>
 		<div class="block-wrapper col-xs-12">
 			<div class="title-block-wrapper col-xs-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Pháp thực hành</div>
 				<ul class="list-menu col-xs-8">
 					<li class="menu-item col-xs-4">
-						<a class="menu-link" href="#">Pháp thực hành 01</a>
+						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['0']->ID); ?>"><?php echo $dataCate3['posts']['0']->post_title; ?></a>
 					</li>
 					<li class="menu-item col-xs-4">
-						<a class="menu-link" href="#">Pháp thực hành 02</a>
+						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['1']->ID); ?>"><?php echo $dataCate3['posts']['1']->post_title; ?></a>
 					</li>
 					<li class="menu-item col-xs-4">
-						<a class="menu-link" href="#">Pháp thực hành 03</a>
+						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['2']->ID); ?>"><?php echo $dataCate3['posts']['2']->post_title; ?></a>
 					</li>
 
 				</ul>
-				<a href="#" class="paddle-left">Xem thêm >></a>
+				<a href="<?php echo $dataCate3['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
 			<div class="left-block-equal col-xs-6">
 				<div class="img-block-large">
@@ -153,73 +188,76 @@ $cats = get_categories();
 				</div>
 				<div class="block-news">
 					<div class="title-news">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
+						<a href="<?php echo get_permalink($dataCate3['posts']['0']->ID) ?>" ><?php echo $dataCate3['posts']['0']->post_title; ?></a>
 					</div>
 					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+						<?php 
+						$content = $dataCate3['posts']['0']->post_content;
+						$content = strip_tags($content);
+						echo substr_full_word($content,200)
+						
+						?>
 					</div>
 				</div>
 			</div>
 			<div class="right-block-equal col-xs-6">
 				<div class="list-news">
-					<div class="news-item">
-						<div class="content-news">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-						</div>
-					</div>
-					<div class="news-item">
-						<div class="content-news">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-						</div>
-					</div>
-					<div class="news-item">
-						<div class="img-block-small">
-							<img src="" alt="">
-						</div>
-						<div class="content-news">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit
-						</div>
-					</div>
-					<div class="news-item">
-						<div class="img-block-small">
-							<img src="" alt="">
-						</div>
-						<div class="content-news">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit
-						</div>
-					</div>
+					<?php foreach ($dataCate3['posts'] as $key => $post) {?>
+						<?php if($key>0) : ?>
+							<div class="news-item">
+								<?php if (has_post_thumbnail( $post->ID ) ): ?>
+									<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+									<div class="img-block-small"  style="background-image: url('<?php echo $image[0]; ?>')">
+										<img src="" alt="">
+									</div>
+								<?php endif; ?>
+								<div class="content-news">
+									<a href="<?php echo get_permalink($post->ID); ?>"><?php echo substr_full_word(strip_tags($post->post_content),100); ?></a>
+								</div>
+							</div>
+						<?php endif; ?>
+					<?php } ?>
 				</div>
 
 			</div>
 		</div>
+		<?php 
+			$dataCate4 = get_post_by_slug_category('thay-thanh-thien',1);
+			$post = $dataCate4['posts'][0];
+		 ?>
 		<div class="block-wrapper col-xs-12">
 			<div class="title-block-wrapper col-xs-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">thầy thanh thiện</div>
-				<a href="#" class="paddle-left">Xem thêm >></a>
+				<a href="<?php echo $dataCate4['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
 			<div class="left-block-equal col-xs-6">
-				<div class="img-block-large">
+				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+
+				<div class="img-block-large" style="background-image: url('<?php echo $image[0]; ?>')">
 					<img src="" alt="">
 				</div>
 			</div>
 			<div class="right-block-equal col-xs-6">
 				<div class="news-item">
 					<div class="title-news">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+						<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
 					</div>
 
 					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						<?php echo substr_full_word(strip_tags($post->post_content),500); ?>
 					</div>
 				</div>
 			</div>
 		</div>
+		<?php 
+			$dataCate5 = get_post_by_slug_category('tra-loi-cho-doc-gia',3);
+		?>
 		<div class="block-wrapper asking-religion col-xs-12">
 			<div class="title-block-wrapper col-xs-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">hành giả hỏi đạo</div>
-				<a href="#" class="paddle-left">Xem thêm >></a>
+				<a href="<?php echo $dataCate5['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
 			<div class="news-item col-xs-12">
 				<div class="title-news">
@@ -231,7 +269,7 @@ $cats = get_categories();
 					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
 			</div>
-			<div class="news-item col-xs-12">
+			<!-- <div class="news-item col-xs-12">
 				<div class="title-news">
 					<div class="double-padles">>></div>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -250,7 +288,7 @@ $cats = get_categories();
 				<div class="content-news">
 					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 	</div>

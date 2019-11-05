@@ -37,9 +37,14 @@
 	margin-bottom: 15px;
 }
 .detail-post-wrapper .block-news .img-block-large{
-	width: 70%;
-	min-height: 350px;
+	width: 100%;
+	min-height: 250px;
 	background-size: cover;
+	text-align: center;
+	background-color: transparent;
+}
+.detail-post-wrapper .block-news .img-block-large img{
+	height: 100%;
 }
 .detail-post-wrapper .block-news .content-news{
 	padding: 0px;
