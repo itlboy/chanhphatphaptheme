@@ -43,67 +43,8 @@ $query = new WP_Query( $args );
 
 
 	</div>
-	<!-- <div class="block-wrapper block-split col-xs-12">
-		<div class="left-block-equal col-xs-6">
-			<div class="img-block-large">
-				<img src="" alt="">
-			</div>
-			<div class="block-news">
-				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit
-				</div>
-			</div>
-		</div>
-		<div class="right-block-equal col-xs-6">
-			<div class="list-news">
-				<div class="news-item">
-					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-					</div>
-				</div>
-				<div class="news-item">
-					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</div> -->
+	
 	<div class="block-wrapper col-xs-12">
-		<!-- <div class="block-item col-xs-12">
-			<div class="img-block-medium col-xs-2">
-				<img src="" alt="">
-			</div>
-			<div class="block-news col-xs-10">
-				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-				</div>
-				<div class="content-news">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-				</div>
-			</div>
-		</div> -->
-		<!-- <div class="block-item col-xs-12">
-			<div class="img-block-medium col-xs-2">
-				<img src="" alt="">
-			</div>
-			<div class="block-news col-xs-10">
-				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-				</div>
-				<div class="content-news">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-				</div>
-			</div>
-
-		</div> -->
 
 		<?php 
 		if ( have_posts() ) : ?>
@@ -126,11 +67,11 @@ $query = new WP_Query( $args );
 						<?php 
 						$content = get_the_content();
 						$content = strip_tags($content);
-						echo substr($content, 0, 300);
+						echo substr_full_word($content, 300);
 						?>
 					</div>
 				</div>
-				<?php if (has_post_thumbnail( $post->ID ) ): ?>
+				<?php if (has_post_thumbnail( $post->ID ) )	: ?>
 					</div>
 				<?php endif; ?>
 
@@ -143,73 +84,7 @@ $query = new WP_Query( $args );
 
 			<?php endif; ?>
 
-		<!-- <div class="block-item col-xs-12">
-			<div class="img-block-medium col-xs-2">
-				<img src="" alt="">
-			</div>
-			<div class="block-news col-xs-10">
-				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-				</div>
-				<div class="content-news">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-				</div>
-			</div>
-		</div>
-		<div class="block-item col-xs-12">
-			<div class="img-block-medium col-xs-2">
-				<img src="" alt="">
-			</div>
-			<div class="block-news col-xs-10">
-				<div class="title-news">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-				</div>
-				<div class="content-news">
-					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-				</div>
-			</div>
-
-		</div>
-		<div class="block-news col-xs-12">
-			<div class="title-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-			</div>
-			<div class="content-news">
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div>
-		<div class="block-news col-xs-12">
-			<div class="title-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-			</div>
-			<div class="content-news">
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div>
-		<div class="block-news col-xs-12">
-			<div class="title-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-			</div>
-			<div class="content-news">
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div>
-		<div class="block-news col-xs-12">
-			<div class="title-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-			</div>
-			<div class="content-news">
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div>
-		<div class="block-news col-xs-12">
-			<div class="title-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-			</div>
-			<div class="content-news">
-				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</div>
-		</div> -->
+		
 		<?php
 		echo get_the_posts_pagination(
 			array(
@@ -219,22 +94,7 @@ $query = new WP_Query( $args );
 			)
 		);
 		?> 
-		<!-- <nav id="pagination-wrapper">
-			<ul class="pagination">
-
-				<li class="page-item active"><a class="page-link" href="#">1</a></li>
-				<li class="page-item"><a class="page-link" href="#">2</a></li>
-				<li class="page-item"><a class="page-link" href="#">3</a></li>
-				<li class="page-item">
-					<a class="page-link" href="#" aria-label="Next">
-						<span aria-hidden="true">></span>
-					</a>
-				</li>
-				<li class="page-item last-page">
-					<a class="page-link" href="#">Trang cuối</a>
-				</li>
-			</ul>
-		</nav> -->
+		
 	</div>
 
 

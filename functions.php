@@ -102,7 +102,6 @@ if ( ! function_exists( 'prefix_modify_query_order' ) ) {
 
     function prefix_modify_query_order( $query ) {
       if ( is_main_query() ) {
-        echo 123;
         $args =  array( 'title' => 'ASC' );
 
         $query->set( 'orderby', $args );
@@ -197,5 +196,13 @@ function wpdocs_after_setup_theme() {
     add_theme_support( 'html5', array( 'search-form' ) );
 }
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
+
+// add_action( 'widgets_init', function(){
+//  register_widget( 'DungLun_Widget' );
+// });
+
+// add_action( 'widgets_init', 'create_thachpham_widget' );
+
+
 
 ?>

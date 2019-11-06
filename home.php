@@ -2,13 +2,19 @@
 get_header();
 $cats = get_categories();
 // var_dump(get_terms( 'nav_menu', array( 'hide_empty' => true ) ));die;
-$args = array
-    (
-        'post_type' => 'attachment',
-        'post_mime_type' => 'audio',
-        'numberposts' => 1
-    );
-$audiofiles = get_posts($args);
+$args = array(
+    'post_type'=> 'post',
+    'post_status' => 'publish',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+            'taxonomy' => 'post_format',
+            'field' => 'slug',
+            'terms' => array( 'post-format-video' )
+        )
+    )
+);
+$video = get_posts( $args );
 $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 
 ?>

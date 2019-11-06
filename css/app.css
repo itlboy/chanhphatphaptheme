@@ -987,6 +987,14 @@ body{
 .audio-block .news-item.active .content-news{
 	font-weight: bold;
 }
+.audio-block .news-item .content-news a{
+	color: #595858;
+	text-decoration: none;
+}
+.audio-block .news-item .content-news a:hover{
+	color:#000;
+}
+
 
 .key-search-block .key-search-content{
 	font-size: 16px;
