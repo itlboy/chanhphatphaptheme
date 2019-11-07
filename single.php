@@ -13,7 +13,7 @@
 		$countView = getPostViews($post_id);
 		//get related
 
-		$related = get_posts( array( 'category__in' => wp_get_post_categories($post_id), 'numberposts' => 5, 'post__not_in' => array($post_id) ) );
+		$related = get_posts( array( 'category__in' => wp_get_post_categories($post_id), 'numberposts' => 7, 'post__not_in' => array($post_id) ) );
 		?>
 		<div class="main-content col-lg-12">
 			
@@ -53,31 +53,14 @@
 								</div>
 							</div>
 							<div class="footer-post social-block col-xs-12">
-								<div class="share-block">
-									<a href="" class="btn-like">Thích <span>32</span></a>
-									<a href="" class="btn-share">Chia sẻ</a>
-								</div>
 								<div class="hastag-block">
-									<span>#Lorem ipsum</span>
-									<span>#dolor</span>
-									<span>#consectetur</span>
-									<span>#reprehenderit</span>
-									<span>#voluptate</span>
-									<span>velit esse</span>
+										<?php dynamic_sidebar( 'list-tag' ); ?>
 								</div>
+								<div id="fb-root"></div>
+								<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
 								<div class="conment-block">
-									<div class="title-comnent">
-										<span class="count-comment">0</span>
-										bình luận
-									</div>
-									<div class="box-comment">
-										<div class="img-block-small img-avartar-fb">
-											<img src="" alt="">
-										</div>
-										<textarea class='textarea-comment'>
-
-										</textarea>
-									</div>
+									<div class="fb-comments" data-href="https://www.facebook.com/chanhphatphap" data-width="" data-numposts="5"></div>
+									
 									
 								</div>
 							</div>
@@ -90,31 +73,30 @@
 								<div class="title-block">Các bài viết khác</div>
 							</div>
 							<div class="list-news col-xs-12">
-								<div class="news-item col-xs-4">
-									<div class="img-post">
-										<img src="" alt="">
-									</div>
-									<div class="title-news">Lorem ipsum dolor sit amet elit </div>
-								</div>
-								<div class="news-item col-xs-4">
-									<div class="img-post">
-										<img src="" alt="">
-									</div>
-									<div class="title-news">Lorem ipsum dolor sit amet elit</div>
-								</div>
-								<div class="news-item col-xs-4">
-									<div class="img-post">
-										<img src="" alt="">
-									</div>
-									<div class="title-news">Lorem ipsum dolor sit amet elit</div>
-								</div>
+								<?php foreach ($related as $key => $post) {?>
+									<?php if($key<3){ ?>
+										<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
+										<div class="news-item col-xs-4" >
+											<div class="img-post" style="background-image: url('<?php echo $image[0]; ?>')">
+												<img src="" alt="">
+											</div>
+											<div class="title-news">
+												<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
+											</div>
+										</div>
+									<?php } ?>
+								<?php } ?>
+								
+								
 							</div>
 							<div class="list-link-news col-xs-12">
-								<a href="" class="link-news-item"><span>>></span>Lorem ipsum dolor sit amet, consectetur </a>
-								<a href="" class="link-news-item"><span>>></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </a>
-								<a href="" class="link-news-item"><span>>></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </a>
-								<a href="" class="link-news-item"><span>>></span>Lorem ipsum dolor sit amet, consectetur adipiscing </a>
-								<a href="" class="link-news-item"><span>>></span>Lorem ipsum dolor sit amet,  </a>
+								<?php foreach ($related as $key => $post) {?>
+									<?php if($key>=3){ ?>
+										<a href="<?php echo get_permalink($post->ID) ?>" class="link-news-item"><span>>></span><?php echo $post->post_title; ?></a>
+									<?php } ?>
+								<?php } ?>
+								
+							
 							</div>
 							
 						</div>

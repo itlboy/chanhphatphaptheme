@@ -6,8 +6,7 @@
   **/
   define( 'THEME_URL', get_stylesheet_directory() );
   define( 'CORE', THEME_URL . '/core' );
-  define( 'CAT_SPECIAL_NAME', 'Cac-bai-giang-phap');
-
+   define( 'CAT_SPECIAL_NAME', 'Cac-bai-giang-phap');
 /**
   @ Load file /core/init.php
   @ Đây là file cấu hình ban đầu của theme mà sẽ không nên được thay đổi sau này.
@@ -91,6 +90,14 @@
                 	'after_sidebar' => '</h3>'
                 );
                 register_sidebar( $sidebar );
+                 $listTag = array(
+                    'name' => __('List Tag', 'dunglun'),
+                    'id' => 'list-tag',
+                    'description' => 'List tag ',
+                    'class' => 'list-tag',
+                    
+                );
+                register_sidebar( $listTag );
             }
             add_action ( 'init', 'thachpham_theme_setup' );
 
@@ -203,6 +210,6 @@ add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 
 // add_action( 'widgets_init', 'create_thachpham_widget' );
 
-
+// add_filter('content_save_pre', 'trim');
 
 ?>

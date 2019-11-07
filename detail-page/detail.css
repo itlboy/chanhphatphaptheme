@@ -50,6 +50,9 @@
 	padding: 0px;
 	line-height: 24px;
 }
+.detail-post-wrapper .block-news .content-news p span{
+	font-size: 15px !important;
+}
 .detail-post-wrapper .footer-post{
 	padding: 0px;
 }
@@ -75,6 +78,7 @@
 }
 .detail-post-wrapper .social-block .hastag-block{
 	margin-bottom: 20px;
+	list-style: none;
 }
 .detail-post-wrapper .conment-block .title-comnent{
 	font-weight: bold;
@@ -115,6 +119,7 @@
 	min-height: 160px;
 	background-color: #ebebeb;
 	margin-bottom: 10px;
+	background-size: cover;
 }
 .list-posts-wrapper .list-link-news{
 	padding: 0px;
@@ -131,4 +136,7 @@
 }
 .list-posts-wrapper .list-link-news .link-news-item span{
 	margin-right: 5px;
+}
+.fb_iframe_widget span{
+	width: 100% !important;
 }
