@@ -1,8 +1,21 @@
 $( document ).ready(function(){
 	var topMenuEl = $('#menu-top-menu');
-	var countItems = $('#menu-top-menu .menu-item').length;
-	var percent = 100/countItems;
-	$('#menu-top-menu .menu-item').css('width',percent+'%');
+	var count = 0;
+	$('#menu-top-menu .menu-item').each(function(key,value) { 
+
+		if(!$(value).parent().hasClass('sub-menu')){
+			count++;
+		}
+
+	});
+	var percent = 100/count;
+	$('#menu-top-menu .menu-item').each(function(key,value) { 
+
+		if(!$(value).parent().hasClass('sub-menu')){
+			$(value).css('width',percent+'%');
+		}
+
+	});
 	changeAudio();
 
 });

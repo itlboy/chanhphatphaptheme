@@ -1092,6 +1092,28 @@ body{
 	color: #737373;
 	text-decoration: none;
 }
+.link-wrapper{
+	padding-top: 10px;
+}
+#menu-menu-link-footer{
+	border: 0px;
+}
+#menu-menu-link-footer .menu-item{
+	display: block;
+}
+#menu-menu-link-footer .menu-item a{
+	color:#5d5757;
+	text-decoration: none;
+	font-size: 12px;
+	border: 0px;
+	padding: 5px;
+}
+#menu-menu-link-footer .menu-item a:hover{
+	background-color: transparent;
+	border: 0px;
+	color:#000;
+}
+
 .contact-wrapper{
 	padding-left: 0px;
 	padding-right: 0px;

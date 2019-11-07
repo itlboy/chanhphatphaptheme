@@ -44,7 +44,14 @@
 							</div>
 						</div>
 						<div class="link-wrapper col-xs-3">
-							<div class="list-news-link col-xs-6">
+							<?php 
+							wp_nav_menu(
+								array(
+									'menu'=>'menu-link-footer',
+									'menu_class'=>'nav nav-tabs col-xs-12',
+								)
+							); ?>
+							<!-- <div class="list-news-link col-xs-6">
 								<div class="link-item"><a href="">Link bài viết 1</a></div>
 								<div class="link-item"><a href="">Link bài viết 2</a></div>
 								<div class="link-item"><a href="">Link bài viết 3</a></div>
@@ -55,8 +62,8 @@
 								<div class="link-item"><a href="">Link bài viết 2</a></div>
 								<div class="link-item"><a href="">Link bài viết 3</a></div>
 								<div class="link-item"><a href="">Link bài viết 4</a></div>
-							</div>
-							</div>
+							</div> -->
+						</div>
 						<div class="contact-wrapper col-xs-4">
 							<div class="title-contact">
 								Địa chỉ liên hệ
