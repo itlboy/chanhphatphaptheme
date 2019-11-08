@@ -6,8 +6,10 @@ $args = array
         'numberposts' => 4
     );
 $audiofiles = get_posts($args);
+
+
  ?>
-<div class="block-wrapper audio-block col-xs-12">
+<li class="widget widget-audio col-xs-12" >
 	<div class="title-block-wrapper col-xs-12">
 		<div class="title-block">Audio</div>
 	</div>
@@ -28,31 +30,8 @@ $audiofiles = get_posts($args);
 			</div>
 		<?php } ?>
 		
-		<!-- <div class="news-item col-xs-12">
-			<div class="icon-volume">
-				<i class="glyphicon glyphicon-volume-up"></i>
-			</div>
-			<div class="content-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  
-			</div>
-		</div>
-		<div class="news-item col-xs-12">
-			<div class="icon-volume">
-				<i class="glyphicon glyphicon-volume-up"></i>
-			</div>
-			<div class="content-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-			</div>
-		</div>
-		<div class="news-item col-xs-12">
-			<div class="icon-volume">
-				<i class="glyphicon glyphicon-volume-up"></i>
-			</div>
-			<div class="content-news">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-			</div>
-		</div> -->
-	</div>
+		
+	
 	<!-- <div class="block-wrapper key-search-block col-xs-12">
 		<div class="title-block-wrapper col-xs-12">
 			<div class="title-block">Từ khóa tìm kiếm</div>
@@ -95,4 +74,4 @@ $audiofiles = get_posts($args);
 
 		</div>
 	</div> -->
-</div>
+</li>

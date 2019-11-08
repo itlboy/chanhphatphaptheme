@@ -108,7 +108,8 @@
 
 
 					<div class="right-content col-xs-4">
-						<div class="search-box col-xs-12">
+						<?php get_sidebar(); ?>
+						<!-- <div class="search-box col-xs-12">
 							<input type="text" name="search-box" placeholder="Tìm kiếm">
 							<i class="icon-search glyphicon glyphicon-search"></i>
 						</div>
@@ -253,7 +254,7 @@
 								</table>
 								
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
