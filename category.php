@@ -29,7 +29,7 @@ $query = new WP_Query( $args );
 					Sắp xếp theo
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-					<a class="dropdown-item" href="<?php add_action( 'pre_get_posts', 'prefix_modify_query_order' ); ?>">Thời gian</a>
+					<a class="dropdown-item" href="#">Thời gian</a>
 					<a class="dropdown-item" href="#">Tiêu đề</a>
 
 				</div>

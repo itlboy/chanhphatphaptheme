@@ -1,43 +1,33 @@
 <?php 
-$args = array(
-    'post_type'=> 'post',
-    'post_status' => 'publish',
-    'order' => 'DESC',
-    'tax_query' => array(
-        array(
-            'taxonomy' => 'post_format',
-            'field' => 'slug',
-            'terms' => array( 'post-format-video' )
-        )
-    )
-);
-$videos = get_posts( $args );
-echo strip_tags($videos[0]->post_content);
-echo strip_tags($videos[1]->post_content);
+	$posts = get_posts(array(
+		'numberposts'	=> -1,
+		'post_type'		=> 'post',
+		'meta_key'		=> 'video_url',
+	));
  ?>
-<!-- wp:core-embed/youtube {"url":"https://youtu.be/EIOavjtFky0","type":"video","providerNameSlug":"youtube","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
-<figure class="wp-block-embed-youtube wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
-https://youtu.be/EIOavjtFky0
-</div></figure>
-<!-- /wp:core-embed/youtube -->
+
 <div class="block-wrapper video-block col-xs-12">
 	<div class="title-block-wrapper col-xs-12">
 		<div class="title-block">Video</div>
 	</div>
-	<div class="news-item col-xs-12">
-		<div class="icon-player">
-			<img src="<?php echo get_stylesheet_directory_uri() ?>/images/play-icon.png" alt="">
-		</div>
-		<div class="title-news">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit
-		</div>
-		<div class="img-block-right col-xs-7">
+	<?php 
+	foreach ($posts as $key => $post) {
+		?>
+		<div class="news-item col-xs-12">
 			<div class="icon-player">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/play-icon.png" alt="">
 			</div>
+			<div class="title-news">
+				<?php echo $post->post_title; ?>
+			</div>
+			<div class="video-iframe-wrapper col-xs-12">
+				<iframe  height="200" src="<?php echo get_post_meta($post->ID, 'video_url', TRUE); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
 		</div>
-	</div>
-	<div class="news-item col-xs-12">
+	<?php } ?>
+
+	<!-- <div class="news-item col-xs-12">
 		<div class="icon-player">
 			<img src="<?php echo get_stylesheet_directory_uri() ?>/images/play-icon.png" alt="">
 		</div>
@@ -52,5 +42,5 @@ https://youtu.be/EIOavjtFky0
 		<div class="content-news">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
 		</div>
-	</div>
+	</div> -->
 </div>

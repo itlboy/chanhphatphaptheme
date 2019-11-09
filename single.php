@@ -2,6 +2,7 @@
 	get_header();
 	wp_enqueue_style( 'style', get_template_directory_uri() . '/detail-page/detail.css');
 
+
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
 		?>
 		<?php 
@@ -14,6 +15,7 @@
 		//get related
 
 		$related = get_posts( array( 'category__in' => wp_get_post_categories($post_id), 'numberposts' => 7, 'post__not_in' => array($post_id) ) );
+
 		?>
 		<div class="main-content col-lg-12">
 			
@@ -33,6 +35,7 @@
 								<div class="name-post">
 									<?php echo $post_data->post_title ?>
 								</div>
+								
 								<div class="view-count">
 									<i class="glyphicon glyphicon-eye-open"></i>
 									<span><?php echo $countView; ?></span>
