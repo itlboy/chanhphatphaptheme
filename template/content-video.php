@@ -13,11 +13,11 @@
 	<?php 
 	foreach ($posts as $key => $post) {
 		?>
-		<div class="news-item col-xs-12">
+		<div class="news-item <?php if($key == 0){ ?> active <?php } ?> col-xs-12" data-id="<?php echo $key; ?>">
 			<div class="icon-player">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/play-icon.png" alt="">
 			</div>
-			<div class="title-news">
+			<div class="title-news" data-id="<?php echo $key; ?>">
 				<?php echo $post->post_title; ?>
 			</div>
 			<div class="video-iframe-wrapper col-xs-12">

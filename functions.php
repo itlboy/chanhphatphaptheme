@@ -18,6 +18,7 @@ require_once( CORE . '/get_data_post.php' );
 require_once( CORE . '/sub_str_full_word.php' );  
 require_once( CORE . '/acf_set_up.php' );  
 require_once( CORE . '/video_widget.php' );  
+require_once( CORE . '/audio_widget.php' );  
 
 ?>
 

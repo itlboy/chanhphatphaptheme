@@ -17,7 +17,7 @@ $( document ).ready(function(){
 
 	});
 	changeAudio();
-
+	changeVideo();
 });
 function changeAudio(){
 	var el = $('.widget-audio .news-item .content-news a');
@@ -33,5 +33,15 @@ function changeAudio(){
 			
 		elAudioBar.attr('src',audioSrc);
 		document.getElementById("audio-bar").load();
+	});
+}
+function changeVideo(){
+	var el = $('.video-block .news-item .title-news');
+	el.click(function(e){
+		var dataId = $(e.target).attr('data-id');
+		var itemActive = $('.video-block .news-item.active');
+		itemTarget = $('.video-block .news-item[data-id="'+dataId+'"]');
+		itemActive.removeClass('active');
+		itemTarget.addClass('active')
 	});
 }
