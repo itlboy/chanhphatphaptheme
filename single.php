@@ -15,10 +15,8 @@
 		//get related
 
 		$related = get_posts( array( 'category__in' => wp_get_post_categories($post_id), 'numberposts' => 7, 'post__not_in' => array($post_id) ) );
-
 		?>
 		<div class="main-content col-lg-12">
-			
 				<div class="content col-xs-12">
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb">
@@ -38,7 +36,7 @@
 								
 								<div class="view-count">
 									<i class="glyphicon glyphicon-eye-open"></i>
-									<span><?php echo $countView; ?></span>
+									<span><?php pvc_post_views();?></span>
 								</div>
 							</div>
 							<div class="block-news content-post col-xs-12">
