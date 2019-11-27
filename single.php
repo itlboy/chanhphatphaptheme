@@ -27,7 +27,7 @@
 							<li class="breadcrumb-item active" aria-current="page"><?php echo $post_data->post_title ?></li>
 						</ol>
 					</nav>
-					<div class="left-content col-xs-8">
+					<div class="left-content col-md-8">
 						<div class="block-wrapper detail-post-wrapper col-xs-12">
 							<div class="header-post col-xs-12">
 								<div class="name-post">
@@ -70,14 +70,14 @@
 							
 						</div>
 						<div class="block-wrapper list-posts-wrapper col-xs-12">
-							<div class="title-block-wrapper col-xs-12">
+							<div class="title-block-wrapper col-md-12">
 								<div class="title-block">Các bài viết khác</div>
 							</div>
-							<div class="list-news col-xs-12">
+							<div class="list-news col-md-12">
 								<?php foreach ($related as $key => $post) {?>
 									<?php if($key<3){ ?>
 										<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-										<div class="news-item col-xs-4" >
+										<div class="news-item col-md-4" >
 											<div class="img-post" style="background-image: url('<?php echo $image[0]; ?>')">
 												<img src="" alt="">
 											</div>
@@ -108,7 +108,7 @@
 					</div>
 
 
-					<div class="right-content col-xs-4">
+					<div class="right-content col-md-4">
 						<?php get_sidebar(); ?>
 						<!-- <div class="search-box col-xs-12">
 							<input type="text" name="search-box" placeholder="Tìm kiếm">

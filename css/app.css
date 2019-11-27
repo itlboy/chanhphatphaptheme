@@ -1322,6 +1322,7 @@ body{
 }
 .breadcrumb .breadcrumb-item{
 	font-weight: bold;
+	display: contents;
 }
 
 #pagination-wrapper{
@@ -1412,6 +1413,7 @@ body{
 	}
 	.left-content{
 		float: left;
+		width: 100%;
 	}
 	.img-block-large{
 		max-width: 320px;	
@@ -1431,4 +1433,15 @@ body{
 		width: 100%;
 		text-align: center;
 	}
+	.list-news .news-item{
+		width: 100%;
+		padding: 0px;
+	}
+}
+.block-wrapper .block-item .img-block-medium {
+	width: 100px;
+	margin-right: 15px;
+}
+.block-wrapper .block-item.has-img .block-news {
+	width: calc(100% - 115px);
 }

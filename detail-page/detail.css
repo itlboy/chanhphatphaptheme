@@ -143,3 +143,17 @@
 .fb_iframe_widget{
 	width: 100% !important;
 }
+@media (max-width: 990px){
+	.list-posts-wrapper .list-news .news-item:first-child{
+		padding-left: 10px;
+	}
+	.list-posts-wrapper .list-news{
+		float: left;
+	}
+	.list-posts-wrapper .list-news .news-item{
+		margin-bottom: 10px;
+	}
+	.list-posts-wrapper .list-news .news-item .img-post{
+		max-width: 211px;
+	}
+}

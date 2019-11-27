@@ -103,11 +103,11 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 				if (has_post_thumbnail( $post->ID ) ): 
 					?>
 					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-					<div class="block-item col-xs-12">
-						<div class="img-block-medium col-xs-2" style="background-image: url('<?php echo $image[0]; ?>')">
+					<div class="block-item has-img col-xs-12">
+						<div class="img-block-medium " style="background-image: url('<?php echo $image[0]; ?>')">
 
 						</div>
-						<div class="block-news col-xs-10">
+						<div class="block-news">
 							<div class="title-news">
 								<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
 							</div>
