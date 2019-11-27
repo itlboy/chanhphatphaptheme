@@ -1,8 +1,19 @@
-
+</div>
+</div>
 <footer>
 	<div class="row">
 		<div class="menu-footer col-lg-12">
-			<ul class="nav nav-tabs">
+			<?php 
+			wp_nav_menu(
+				array(
+					'menu'=>'top-menu',
+					'menu_class'=>'nav nav-tabs',
+				)
+			);
+
+			$menus = wp_get_nav_menu_items('top-menu');
+			?>
+			<!-- <ul class="nav nav-tabs">
 				<li class="nav-item col-lg-1">
 					<a class="nav-link " href="#">Trang chủ</a>
 				</li>
@@ -25,24 +36,27 @@
 				<li class="nav-item col-lg-1">
 					<a class="nav-link" href="#">Video/ audio</a>
 				</li>
-			</ul>
+			</ul> -->
 		</div>
-		<div class="footer-content col-xs-12">
-			<div class="logo-wrapper col-xs-5">
-				<div class="logo-content col-xs-6">
+	</div>
+	<div class="row">
+		
+		<div class="footer-content col-md-12">
+			<div class="logo-wrapper col-md-5">
+				<div class="logo-content col-md-6">
 					<div class="logo-image-wraper">
 						<div class="logo-image">
 							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/phathien.png" alt="">
 						</div>
 					</div>
 				</div>
-				<div class="logo-title col-xs-6">
+				<div class="logo-title col-md-6">
 					<div class="title-top">tu hành đúng</div>
 					<div class="title-bottom">chánh phật pháp</div>
 
 				</div>
 			</div>
-			<div class="link-wrapper col-xs-3">
+			<div class="link-wrapper col-md-3">
 				<?php 
 				wp_nav_menu(
 					array(
@@ -52,7 +66,7 @@
 				); ?>
 				
 			</div>
-			<div class="contact-wrapper col-xs-4">
+			<div class="contact-wrapper col-md-4">
 				<div class="title-contact">
 					Địa chỉ liên hệ
 				</div>
@@ -68,8 +82,7 @@
 
 	
 </footer>
-</div>
-</div>
+
 </div> <!-- /.container -->
 </div> 
 

@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 
 	<title>Blog Template for Bootstrap</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/app.css">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -68,23 +68,25 @@
 					</div>
 					
 				</div>
-				<div class="menu-wrapper col-lg-12">
-					<?php 
+				<div class="row">
+					<div class="menu-wrapper col-lg-12">
+						<?php 
 
-					wp_nav_menu(
-						array(
-							'menu'=>'top-menu',
-							'menu_class'=>'nav nav-tabs',
-						)
-					);
+						wp_nav_menu(
+							array(
+								'menu'=>'top-menu',
+								'menu_class'=>'nav nav-tabs',
+							)
+						);
 
-					$menus = wp_get_nav_menu_items('top-menu');
-					// var_dump($menus);die
-					?>
+						$menus = wp_get_nav_menu_items('top-menu');
+						?>
+						
+					</div>
 					
 				</div>
+				
 			</header>
 			<div class="main-content col-lg-12">
 			
-				<div class="content col-xs-12">
 					

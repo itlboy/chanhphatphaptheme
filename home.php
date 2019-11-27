@@ -18,27 +18,22 @@ $video = get_posts( $args );
 $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 
 ?>
-<div class="notify-wrapper col-lg-12">
-	<?php dynamic_sidebar( 'notify-bar' ); ?>
-	<!-- <div class="notify-label col-lg-2">
-		Thông báo mới: 
+<div class="row">
+	<div class="notify-wrapper col-lg-12">
+		<?php dynamic_sidebar( 'notify-bar' ); ?>
 	</div>
-	<div class="notify-content col-lg-10">
-		Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-	</div> -->
 </div>
-<div class="content col-xs-12">
-	<div class="left-content col-xs-8">
-		<div class="block-wrapper col-xs-12">
-			<div class="left-block-equal col-xs-6">
+
+<div class="row">
+	<div class="left-content col-md-8">
+		<div class="block-wrapper">
+			<div class="left-block-equal col-md-6">
 				<?php $post1 = $dataCateSpecial['posts'][0] ?>
-				<?php if (has_post_thumbnail( $post1->ID ) ): ?>
 					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post1->ID ), 'single-post-thumbnail' ); ?>
-					<div class="img-block-large" style="background-image: url('<?php echo $image[0]; ?>')">
+					<div class="img-block-large col-md-12" style="background-image: url('<?php echo $image[0]; ?>')">
 						<img src="" alt="">
 					</div>
-				<?php endif; ?>
-				<div class="block-news">
+				<div class="block-news col-md-12">
 					<div class="title-news">
 						<a href="<?php echo get_permalink($post1->ID) ?>" ><?php echo $post1->post_title; ?></a>
 					</div>
@@ -51,8 +46,8 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 					</div>
 				</div>
 			</div>
-			<div class="right-block-equal col-xs-6">
-				<div class="list-news">
+			<div class="right-block-equal col-md-6">
+				<div class="list-news col-md-12">
 					<?php foreach ($dataCateSpecial['posts'] as $key => $post) {?>
 						<?php if($key>0){ ?>
 						<div class="news-item">
@@ -61,21 +56,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 							</div>
 						</div>
 					<?php }} ?>
-					<!-- <div class="news-item">
-						<div class="content-news">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-						</div>
-					</div>
-					<div class="news-item">
-						<div class="content-news">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-						</div>
-					</div>
-					<div class="news-item">
-						<div class="content-news">
-							Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-						</div>
-					</div> -->
+					
 				</div>
 
 			</div>
@@ -84,12 +65,12 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 			$dataCate1 = get_post_by_slug_category('sach-goi-dau-tu-tap',2);
 		 ?>
 		<div class="block-wrapper col-xs-12">
-			<div class="title-block-wrapper col-xs-12">
+			<div class="title-block-wrapper col-md-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Sách gối đầu tu tập</div>
 				<a href="<?php echo $dataCate1['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
-			<div class="left-block-equal col-xs-6">
+			<div class="left-block-equal col-md-6">
 				<div class="img-block-large">
 					<img src="" alt="">
 				</div>
@@ -98,7 +79,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 				</div>
 
 			</div>
-			<div class="right-block-equal col-xs-6">
+			<div class="right-block-equal col-md-6">
 				<div class="img-block-large">
 					<img src="" alt="">
 				</div>
@@ -112,7 +93,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 			$dataCate2 = get_post_by_slug_category('Cac-bai-giang-phap',3);
 		 ?>
 		<div class="block-wrapper col-xs-12">
-			<div class="title-block-wrapper col-xs-12">
+			<div class="title-block-wrapper col-xs-md">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Các bài giảng pháp</div>
 				<a href="<?php echo $dataCate2['link']; ?>" class="paddle-left">Xem thêm >></a>
@@ -123,7 +104,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 					?>
 					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 					<div class="block-item col-xs-12">
-						<div class="img-block-medium col-xs-2 " style="background-image: url('<?php echo $image[0]; ?>')">
+						<div class="img-block-medium col-xs-2" style="background-image: url('<?php echo $image[0]; ?>')">
 
 						</div>
 						<div class="block-news col-xs-10">
@@ -159,39 +140,14 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 
 			<?php endif;} ?>
 			
-			<!-- <div class="block-item col-xs-12">
-				<div class="img-block-medium col-xs-2">
-					<img src="" alt="">
-				</div>
-				<div class="block-news col-xs-10">
-					<div class="title-news">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-					</div>
-					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-					</div>
-				</div>
-
-			</div>
-			<div class="block-item col-xs-12">
-
-				<div class="block-news">
-					<div class="title-news">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu
-					</div>
-					<div class="content-news">
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-					</div>
-				</div>
-
-			</div> -->
+			
 		</div>
 		<?php 
 			$dataCate3 = get_post_by_slug_category('phap-thuc-hanh',5);
 
 		 ?>
 		<div class="block-wrapper col-xs-12">
-			<div class="title-block-wrapper col-xs-12">
+			<div class="title-block-wrapper col-md-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Pháp thực hành</div>
 				<ul class="list-menu col-xs-8">
@@ -208,7 +164,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 				</ul>
 				<a href="<?php echo $dataCate3['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
-			<div class="left-block-equal col-xs-6">
+			<div class="left-block-equal col-md-6">
 				<div class="img-block-large">
 					<img src="" alt="">
 				</div>
@@ -226,7 +182,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 					</div>
 				</div>
 			</div>
-			<div class="right-block-equal col-xs-6">
+			<div class="right-block-equal col-md-6">
 				<div class="list-news">
 					<?php foreach ($dataCate3['posts'] as $key => $post) {?>
 						<?php if($key>0) : ?>
@@ -252,19 +208,19 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 			$post = $dataCate4['posts'][0];
 		 ?>
 		<div class="block-wrapper col-xs-12">
-			<div class="title-block-wrapper col-xs-12">
+			<div class="title-block-wrapper col-md-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">thầy thanh thiện</div>
 				<a href="<?php echo $dataCate4['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
-			<div class="left-block-equal col-xs-6">
+			<div class="left-block-equal col-md-6">
 				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 
 				<div class="img-block-large" style="background-image: url('<?php echo $image[0]; ?>')">
 					<img src="" alt="">
 				</div>
 			</div>
-			<div class="right-block-equal col-xs-6">
+			<div class="right-block-equal col-md-6">
 				<div class="news-item">
 					<div class="title-news">
 						<a href="<?php echo get_permalink($post->ID) ?>" ><?php echo $post->post_title; ?></a>
@@ -306,7 +262,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 	</div>
 
 
-	<div class="right-content col-xs-4">
+	<div class="right-content col-md-4">
 		<?php get_sidebar(); ?>
 	</div>
 	<?php
