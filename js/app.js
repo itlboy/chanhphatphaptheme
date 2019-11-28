@@ -16,6 +16,14 @@ $( document ).ready(function(){
 		}
 
 	});
+	$('#menu-top-menu-1 .menu-item').each(function(key,value) { 
+
+		if(!$(value).parent().hasClass('sub-menu')){
+			$(value).css('width',percent+'%');
+		}
+
+	});
+
 	changeAudio();
 	changeVideo();
 });

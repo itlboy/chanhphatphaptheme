@@ -58,14 +58,14 @@ $query = new WP_Query( $args );
 
 			while ( have_posts() ) :the_post(); ?>
 				<?php if (has_post_thumbnail( $post->ID ) ): ?>
-					<div class="block-item col-xs-12">
+					<div class="block-item has-img col-xs-12">
 					<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
-					<div id="custom-bg" class="img-block-medium col-xs-2"  style="background-image: url('<?php echo $image[0]; ?>')">
+					<div id="custom-bg" class="img-block-medium"  style="background-image: url('<?php echo $image[0]; ?>')">
 
 					</div>
 				<?php endif; ?>
 
-				<div class="block-news <?php if (has_post_thumbnail( $post->ID ) ): ?> col-xs-10 <?php else: ?> col-xs-12 <?php endif; ?>">
+				<div class="block-news <?php if (has_post_thumbnail( $post->ID ) ): ?> <?php else: ?> col-xs-12 <?php endif; ?>">
 					<div class="title-news">
 						<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
 					</div>
