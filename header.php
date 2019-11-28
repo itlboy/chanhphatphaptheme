@@ -57,6 +57,7 @@
 					<div class="title-content col-lg-12">tu hành đúng chánh phật pháp</div>
 				</div>
 				<div class="row">
+					
 					<div class="slide-show-wrapper col-lg-12">
 						<img class="col-lg-12" src="<?php echo get_stylesheet_directory_uri() ?>/images/slide.png" alt="">
 					</div>

@@ -21,10 +21,14 @@
 }
 .detail-post-wrapper .header-post .view-count i{
 	top: 3px;
+	float: left;
+    line-height: 23px;
 }
 .detail-post-wrapper .header-post .view-count span{
 	font-size: 12px;
 	font-weight: bold;
+	float: left;
+    padding-left: 3px;
 }
 .detail-post-wrapper .block-news{
 	padding: 0px;
