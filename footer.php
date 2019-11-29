@@ -85,17 +85,19 @@
 
 </div> <!-- /.container -->
 </div> 
-<?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/pinwheel.js', array ( 'jquery' ), 1.1, true); ?>
-
+<?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.1, true); ?>
+<?php 
+// wp_enqueue_script( 'script', get_template_directory_uri() . '/js/pinwheel.js', array ( 'jquery' ), 1.1, true);
+ ?>
+<?php 
+// wp_enqueue_script( 'script', get_template_directory_uri() . '/js/jquery.touchwipe.js', array ( 'jquery' ), 1.1, true); 
+?>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<!-- <script type="text/javascript" src="http://tuhanhdungchanhphatphap.net/themes/default/images/slider/plugins/pinwheel/pinwheel.js?321321"></script>
-	<script type="text/javascript" src="http://tuhanhdungchanhphatphap.net/themes/default/images/slider/plugins/pinwheel/jquery.touchwipe.js?332132121321"></script> -->
-
-	<?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/jquery.touchwipe.js', array ( 'jquery' ), 1.1, true); ?>
-	<?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.1, true); ?>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/pinwheel.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.touchwipe.js"></script>
 	<script type="text/javascript"> 
 		$(document).ready(function()
 		{
@@ -127,6 +129,7 @@
 			{
 				pinwheel_slider_1_c.reload(args);
 			});
+
 			$("#pinwheel_slider_1").touchwipe(
 			{
 				wipeLeft: function()
