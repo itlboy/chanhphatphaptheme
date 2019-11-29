@@ -26,6 +26,7 @@ $( document ).ready(function(){
 
 	changeAudio();
 	changeVideo();
+	translateStatitic();
 });
 function changeAudio(){
 	var el = $('.widget-audio .news-item .content-news a');
@@ -51,5 +52,19 @@ function changeVideo(){
 		itemTarget = $('.video-block .news-item[data-id="'+dataId+'"]');
 		itemActive.removeClass('active');
 		itemTarget.addClass('active')
+	});
+}
+function translateStatitic(){
+	var values = ['Đang truy cập','Hôm nay','Khách viếng thăm','Hôm qua','Tháng hiện tại','Tổng lượng truy cập']
+	var items = $('#wp_statistics_widget-2 ul li');
+	$('#wp_statistics_widget-2').css('opacity',0);
+	var countItems = items.length;
+	var count = 0;
+	items.each(function(key,value){
+		count++;
+		$(value).find('label').text(values[key]);
+		if(countItems == count){
+			$('#wp_statistics_widget-2').css('opacity',1);
+		}
 	});
 }
