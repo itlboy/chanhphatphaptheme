@@ -13,12 +13,14 @@ $args = array(
 
 $query = new WP_Query( $args );
  ?>
+ <div class="row">
  <nav aria-label="breadcrumb">
  	<ol class="breadcrumb">
  		<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
  		<li class="breadcrumb-item active" aria-current="page"><?php echo single_cat_title( '', false ); ?></li>
  	</ol>
  </nav>
+
 <div class="left-content col-xs-8">
 	<div class="block-wrapper col-xs-12">
 		<div class="title-block-wrapper col-xs-12">

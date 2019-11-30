@@ -4,11 +4,12 @@
 		'post_type'		=> 'post',
 		'meta_key'		=> 'video_url',
 	));
+	$linkVideoLibrary = get_permalink(get_page_by_path( 'video-audio-page' )->ID);
  ?>
 
 <div class="block-wrapper video-block col-xs-12">
 	<div class="title-block-wrapper col-xs-12">
-		<div class="title-block">Video</div>
+		<div class="title-block"><a href="<?php echo $linkVideoLibrary; ?>">Video</a></div>
 	</div>
 	<?php 
 	foreach ($posts as $key => $post) {

@@ -19,8 +19,11 @@
 .media-item .video-wrapper{
 	min-height: 165px;
 	width: 100%;
-	background-color: #ebebeb;
 	margin-bottom: 10px;
+	padding: 0px;
+}
+.media-item .video-wrapper iframe{
+	width: 100%;
 }
 .media-item .view-count{
 	margin-top: 20px;
@@ -45,4 +48,9 @@
 	height: auto;
 	top: 18px;
 	left: 23px;
+}
+@media (max-width: 990px){
+	.media-item .video-wrapper iframe{
+		max-width: 337px;
+	}
 }

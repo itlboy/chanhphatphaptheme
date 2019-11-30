@@ -268,5 +268,3 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 	<?php
 	get_footer();
 	?>
-get_footer();
-?>

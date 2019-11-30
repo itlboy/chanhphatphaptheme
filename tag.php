@@ -4,6 +4,8 @@ wp_enqueue_style( 'style', get_template_directory_uri() . '/category-page/catego
 
 
 ?>
+<div class="row">
+	
 <div class="left-content col-xs-8">
 	<div class="block-wrapper col-xs-12">
 		<div class="title-block-wrapper col-xs-12">

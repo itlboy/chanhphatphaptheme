@@ -973,6 +973,10 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
+.right-content .title-block a{
+	color: #000;
+	text-decoration: none;
+}
 .img-block-right{
 	height: 150px;
 	background-color: #ebebeb;
