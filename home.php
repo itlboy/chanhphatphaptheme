@@ -152,13 +152,13 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 				<div class="title-block">Pháp thực hành</div>
 				<ul class="list-menu col-xs-8">
 					<li class="menu-item col-xs-4">
-						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['0']->ID); ?>"><?php echo $dataCate3['posts']['0']->post_title; ?></a>
+						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['0']->ID); ?>">Bài thực hành số 1</a>
 					</li>
 					<li class="menu-item col-xs-4">
-						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['1']->ID); ?>"><?php echo $dataCate3['posts']['1']->post_title; ?></a>
+						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['1']->ID); ?>">Bài thực hành số 2</a>
 					</li>
 					<li class="menu-item col-xs-4">
-						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['2']->ID); ?>"><?php echo $dataCate3['posts']['2']->post_title; ?></a>
+						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['2']->ID); ?>">Bài thực hành số 3</a>
 					</li>
 
 				</ul>

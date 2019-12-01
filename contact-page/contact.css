@@ -62,3 +62,43 @@
 .form-contact button:hover{
 	background-color: #699020;
 }
+.contact-form .wpcf7-form [type="text"],
+.contact-form .wpcf7-form [type="email"],
+ .contact-form .wpcf7-form [name="your_message"]{
+ 	padding-left: 15px;
+ }
+ .contact-form .wpcf7-form [type="text"]::placeholder,
+ .contact-form .wpcf7-form [type="email"]::placeholder,
+ .contact-form .wpcf7-form [name="your_message"]::placeholder{
+ 	font-style: italic;
+
+ }
+.contact-form .wpcf7-form [type="text"],
+.contact-form .wpcf7-form [type="email"]{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	height: 35px;
+}
+.contact-form .wpcf7-form [name="your_message"]{
+	display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    height: 155px;
+}
+.contact-form .wpcf7-form [type="submit"]{
+	background-color: #79a627;
+	border: 0px;
+	border-radius: 2px;
+	color: #fff;
+	width: 100px;
+	height: 36px;
+	font-weight: bold;
+}
+.contact-form .wpcf7-form [type="submit"]:hover{
+	background-color: #699020;
+}

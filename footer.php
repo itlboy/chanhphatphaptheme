@@ -97,6 +97,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/pinwheel.js"></script>
+<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/autocomplete.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.touchwipe.js"></script>
 	<script type="text/javascript"> 
 		$(document).ready(function()
@@ -152,6 +153,10 @@
 		});
 		$('html').addClass('pinwheel_slider_fouc');
 		$(".pinwheel_slider_fouc .pinwheel_slider_set4").hide();
+	</script>
+	<script>
+		var keys = ['Phật giáo','Chánh phật pháp','Phật','Tu Hành','Thích Thanh Thiện','Giảng pháp','Hành giả','Đạo'];
+		autocomplete(document.getElementById("myInput"), keys);
 	</script>
 <?php wp_footer(); ?>
 </body>

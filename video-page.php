@@ -23,10 +23,10 @@ wp_enqueue_style( 'style', get_template_directory_uri() . '/video-audio-page/vid
 							<div class="title-block-wrapper col-md-12">
 								<div class="title-block">Thư viện video/audio</div>
 							</div>
-							<div class="news-item col-md-12">
+							<!-- <div class="news-item col-md-12">
 								<div class="content-news">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</div>
 							</div>
-							<div class="list-media col-md-12">
+ -->							<div class="list-media col-md-12">
 								<div class="row">
 									<?php foreach($posts as $post){ ?>
 										<div class="media-item col-md-4">
