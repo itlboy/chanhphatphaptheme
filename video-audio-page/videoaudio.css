@@ -54,3 +54,68 @@
 		max-width: 337px;
 	}
 }
+.dropdown-order-by{
+	position: absolute;
+	right: 0px;
+}
+.dropdown-order-by .dropdown-menu .dropdown-item{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	color: #212121;
+	text-decoration: none;
+}
+.dropdown-order-by .dropdown-menu .dropdown-item:hover{
+	background-color: #eaa959;
+	color:#fff;
+}
+
+#dropdownOrderBy{
+	background-color: #f8f8f8;
+	border:1px solid #e1e1e1;
+	width: 120px;
+	height: 25px;
+	border-radius: 3px;
+	padding: 0px;
+	font-weight: bold;
+	text-align: left;
+	padding-left: 9px;
+}
+#dropdownOrderBy i{
+	position: absolute;
+	right: 4px;
+	top: 8px;
+	font-size: 12px;
+}
+.dropdown-order-by .dropdown-menu{
+	min-width: 120px;
+	padding: 0px;
+}
+.video-page,.audio-page{
+	float:left;
+	width: 100%;
+}
+
+.audio-page .media-item{
+	padding-top: 20px;
+}
+.audio-page .audio-wrapper{
+	padding: 0px;
+}
+.audio-page .audio-wrapper audio{
+	width: 100%;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+.left-content .block-wrapper{
+	width: 100%;
+}
+.audio-page .media-item .img-cover-audio{
+	width: 100%;
+	/*min-height: 263px;*/
+}
+.audio-page .media-item .img-cover-audio img{
+	width: 100%;
+	background-color: #ebebeb;
+}

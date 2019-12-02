@@ -27,6 +27,8 @@ $( document ).ready(function(){
 	changeAudio();
 	changeVideo();
 	translateStatitic();
+	showHideVideoAudioPage();
+	checkErrorImage();
 });
 function changeAudio(){
 	var el = $('.widget-audio .news-item .content-news a');
@@ -66,5 +68,22 @@ function translateStatitic(){
 		if(countItems == count){
 			$('#wp_statistics_widget-2').css('opacity',1);
 		}
+	});
+}
+function showHideVideoAudioPage(){
+	$("#video-dropdown-item").click(function(){
+		$('.video-page').show();
+		$('.audio-page').hide();
+	});
+	$("#audio-dropdown-item").click(function(){
+		$('.video-page').hide();
+		$('.audio-page').show();
+	});
+}
+function checkErrorImage(){
+	$('.audio-page .media-item .img-cover-audio img').each(function(key,value){
+		$(value).on("error", function() {
+			$(value).attr('src', pathNoImage);
+		});
 	});
 }

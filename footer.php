@@ -100,6 +100,7 @@
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/autocomplete.js"></script>
 <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/jquery.touchwipe.js"></script>
 	<script type="text/javascript"> 
+		var pathNoImage = '<?php echo get_stylesheet_directory_uri() ?>'+'/images/no-image.png';
 		$(document).ready(function()
 		{
 			$(".pinwheel_slider_fouc .pinwheel_slider_set4").show();

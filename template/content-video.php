@@ -9,7 +9,7 @@
 
 <div class="block-wrapper video-block col-xs-12">
 	<div class="title-block-wrapper col-xs-12">
-		<div class="title-block"><a href="<?php echo $linkVideoLibrary; ?>">Video</a></div>
+		<div class="title-block"><a href="<?php echo $linkVideoLibrary."?type=video"; ?>">Video</a></div>
 	</div>
 	<?php 
 	foreach ($posts as $key => $post) {

@@ -6,12 +6,11 @@ $args = array
         'numberposts' => 4
     );
 $audiofiles = get_posts($args);
-
-
+$linkVideoLibrary = get_permalink(get_page_by_path( 'video-audio-page' )->ID);
  ?>
 <li class="widget widget-audio col-xs-12" >
 	<div class="title-block-wrapper col-xs-12">
-		<div class="title-block">Audio</div>
+		<div class="title-block"><a href="<?php echo $linkVideoLibrary."?type=audio"; ?>">Audio</a></div>
 	</div>
 	<div class="audio-bar col-xs-12">
 		<audio controls id="audio-bar">	

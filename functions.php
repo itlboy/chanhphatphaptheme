@@ -5,6 +5,7 @@ define( 'CORE', THEME_URL . '/core' );
 define( 'CAT_SPECIAL_NAME', 'Cac-bai-giang-phap');
 
 
+
 require_once( CORE . '/init.php' );
 
 if ( ! isset( $content_width ) ) {
