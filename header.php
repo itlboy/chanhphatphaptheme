@@ -31,7 +31,8 @@
 					<div class="contact-address col-lg-12">	
 						<div class="contact-content">Phone: (0123) 456 789 021 | Email: tuhanhchanhphatphap@gmail.com</div>
 						<div class="lang-page">
-							<a href="#">VN</a> | <a href="#">EN</a>
+							<?php echo do_shortcode('[gtranslate]'); ?>
+							<!-- <a href="#">VN</a> | <a href="#">EN</a> -->
 						</div>	
 
 					</div>
