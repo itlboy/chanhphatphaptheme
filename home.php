@@ -16,11 +16,26 @@ $args = array(
 );
 $video = get_posts( $args );
 $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
-
+$dataPostNotify = get_post_by_slug_category('thong-bao',1);
+$postNotify = $dataPostNotify['posts'][0];
 ?>
 <div class="row">
-	<div class="notify-wrapper col-lg-12">
-		<?php dynamic_sidebar( 'notify-bar' ); ?>
+	<div class="notify-wrapper col-md-12">
+		<div class="notify-label col-md-2">
+			Thông báo mới: 
+		</div>
+		<div class="notify-content col-md-10">
+			<?php if(empty($postNotify)){ ?>
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+			<?php }else{ ?>
+				<a href="<?php echo get_permalink($postNotify->ID) ?>"><?php echo $postNotify->post_title ?></a>
+
+			<?php } ?>
+		</div>
+
+		<?php 
+		// dynamic_sidebar( 'notify-bar' ); 
+		?>
 	</div>
 </div>
 
@@ -33,7 +48,7 @@ $dataCateSpecial = get_post_by_slug_category(CAT_SPECIAL_NAME,5);
 					<div class="img-block-large col-md-12" style="background-image: url('<?php echo $image[0]; ?>')">
 						<img src="" alt="">
 					</div>
-				<div class="block-news col-md-12">
+				<div class="block-news ">
 					<div class="title-news">
 						<a href="<?php echo get_permalink($post1->ID) ?>" ><?php echo $post1->post_title; ?></a>
 					</div>

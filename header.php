@@ -102,6 +102,13 @@
 
 						$menus = wp_get_nav_menu_items('top-menu');
 						?>
+						<a id="show-menu" href="javascript:void(0)"><i class="glyphicon glyphicon-menu-down"></i></a>
+						<?php wp_nav_menu( array( 
+							'theme_location' => 'mobile-menu',
+							'container' => 'nav',
+							'container_class' => 'mobile-menu',
+							'container_id' => 'sidr'
+						) ); ?>
 						
 					</div>
 					

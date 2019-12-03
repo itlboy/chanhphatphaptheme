@@ -54,6 +54,9 @@ if ( ! function_exists( 'thachpham_theme_setup' ) ) {
                 register_nav_menu ( 'primary-menu', __('Primary Menu', 'dunglun') );
 
                 register_nav_menu ( 'menu-link-footer', __('Menu link footer', 'dunglun') );
+                
+                register_nav_menu ( 'mobile-menu', __('Mobile Menu', 'dunglun') );
+
 
                 /*
                  * Tạo sidebar cho theme
@@ -83,6 +86,7 @@ if ( ! function_exists( 'thachpham_theme_setup' ) ) {
 
                 );
                 register_sidebar( $notifyBar );
+                
             }
             add_action ( 'init', 'thachpham_theme_setup' );
 

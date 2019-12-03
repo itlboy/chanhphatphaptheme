@@ -20,6 +20,14 @@ require_once( CORE . '/sub_str_full_word.php' );
 require_once( CORE . '/acf_set_up.php' );  
 require_once( CORE . '/video_widget.php' );  
 require_once( CORE . '/audio_widget.php' );  
+require_once( ABSPATH . '/wp-admin/includes/taxonomy.php');
+$cat_notify = array(
+	'taxonomy'=> 'category',
+	'cat_name'=> 'Thông báo',
+);
+wp_insert_category($cat_notify);
+
+
 
 ?>
 

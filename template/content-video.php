@@ -7,7 +7,7 @@
 	$linkVideoLibrary = get_permalink(get_page_by_path( 'video-audio-page' )->ID);
  ?>
 
-<div class="block-wrapper video-block col-xs-12">
+<div class="widget block-wrapper video-block col-xs-12">
 	<div class="title-block-wrapper col-xs-12">
 		<div class="title-block"><a href="<?php echo $linkVideoLibrary."?type=video"; ?>">Video</a></div>
 	</div>
