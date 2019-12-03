@@ -938,6 +938,16 @@ body{
   float: left;
 }
 
+.menu-pratice{
+	position: absolute;
+    z-index: 1;
+    min-height: auto;
+    left: 175px;
+    border: 0px;
+    background-color: transparent;
+    margin: 0px;
+    margin-top: 7px;
+}
 .menu-item .menu-link{
   display: block;
   color: #000;
@@ -945,6 +955,10 @@ body{
   text-decoration: none;
 }
 
+#bs-example-navbar-collapse-1 .menu-item .menu-link{
+	padding: 0px;
+	padding-right: 20px;
+}
 .menu-item .menu-link:hover {
   color: #eaa959;
 }
@@ -1433,6 +1447,9 @@ body{
 }
 
 @media (max-width: 990px){
+	#bs-example-navbar-collapse-1 .menu-item {
+		float: none;
+	}
 	
 	.right-content{
 		float: left;

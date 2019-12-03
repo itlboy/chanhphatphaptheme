@@ -165,7 +165,55 @@ $postNotify = $dataPostNotify['posts'][0];
 			<div class="title-block-wrapper col-md-12">
 				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/icon-bamboo.png" alt="" class="icon-title">
 				<div class="title-block">Pháp thực hành</div>
-				<ul class="list-menu col-xs-8">
+				<nav class="navbar navbar-default menu-pratice">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<!-- <a class="navbar-brand" href="#">Brand</a> -->
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="menu-item ">
+									<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['0']->ID); ?>">Bài thực hành số 1</a>
+								</li>
+								<li class="menu-item ">
+									<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['1']->ID); ?>">Bài thực hành số 2</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['2']->ID); ?>">Bài thực hành số 3</a>
+								</li>
+							</ul>
+							<!-- <form class="navbar-form navbar-left">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Search">
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+							</form> -->
+							<!-- <ul class="nav navbar-nav navbar-right">
+								<li><a href="#">Link</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+										<li role="separator" class="divider"></li>
+										<li><a href="#">Separated link</a></li>
+									</ul>
+								</li>
+							</ul> -->
+						</div><!-- /.navbar-collapse -->
+					</div><!-- /.container-fluid -->
+				</nav>
+				<!-- <ul class="list-menu col-xs-8">
 					<li class="menu-item col-xs-4">
 						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['0']->ID); ?>">Bài thực hành số 1</a>
 					</li>
@@ -176,7 +224,7 @@ $postNotify = $dataPostNotify['posts'][0];
 						<a class="menu-link" href="<?php echo get_permalink($dataCate3['posts']['2']->ID); ?>">Bài thực hành số 3</a>
 					</li>
 
-				</ul>
+				</ul> -->
 				<a href="<?php echo $dataCate3['link']; ?>" class="paddle-left">Xem thêm >></a>
 			</div>
 			<div class="left-block-equal col-md-6">
