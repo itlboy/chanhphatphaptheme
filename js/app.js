@@ -28,7 +28,7 @@ $( document ).ready(function(){
 	changeVideo();
 	translateStatitic();
 	showHideVideoAudioPage();
-	checkErrorImage();
+	// checkErrorImage();
 	showHideMenuMobile();
 });
 function changeAudio(){

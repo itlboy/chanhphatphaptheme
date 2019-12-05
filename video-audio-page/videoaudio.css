@@ -102,6 +102,11 @@
 }
 .audio-page .audio-wrapper{
 	padding: 0px;
+	background-color: #ebebeb;
+    text-align: center;
+    min-height: 160px;
+    line-height: 160px;
+    margin-bottom: 15px;
 }
 .audio-page .audio-wrapper audio{
 	width: 100%;

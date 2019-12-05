@@ -71,19 +71,14 @@ if(empty($_REQUEST['type']) || $_REQUEST['type'] == 'video'){
 						<?php foreach($audiofiles as $audiofile){ ?>
 							<?php 
 							$linkAudio = $audiofile->guid; 
-							$dirname = pathinfo($linkAudio,PATHINFO_DIRNAME );
-							$fileName = pathinfo($linkAudio, PATHINFO_FILENAME );
-							$imageName = $fileName.'-mp3-image.jpg';
-							$filePath = $dirname.'/'.$imageName;
 							?>
 							<div class="media-item col-md-4">
-								<div class="audio-wrapper col-xs-12">
-									<div class="img-cover-audio">
-										<img src="<?php echo $filePath; ?>" alt="">
-									</div>
-									<audio controls id="audio-bar">	
+								<div class="audio-wrapper">
+									
+									<?php echo do_shortcode("[sc_embed_player fileurl=$linkAudio]"); ?>
+									<!-- <audio controls id="audio-bar">	
 										<source src="<?php echo $linkAudio; ?>" type="audio/mpeg">
-										</audio>
+										</audio> -->
 									</div>
 									<div class="title-news"><a href="<?php echo get_permalink($audiofile->ID); ?>"><?php echo $audiofile->post_title; ?></a></div>
 								</div>

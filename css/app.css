@@ -954,6 +954,14 @@ body{
   text-align: center;
   text-decoration: none;
 }
+.menu-pratice .navbar-toggle[type="button"]{
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding: 5px;
+	float: left;
+}
+
 
 #bs-example-navbar-collapse-1 .menu-item .menu-link{
 	padding: 0px;
@@ -1449,8 +1457,17 @@ body{
 @media (max-width: 990px){
 	#bs-example-navbar-collapse-1 .menu-item {
 		float: none;
+		padding: 5px;
 	}
-	
+	.menu-pratice .navbar-collapse{
+		border: 0px;
+		background-color: #fff;
+		border: 1px solid #ebebeb;
+		padding: 0px;
+	}
+	.menu-pratice .navbar-collapse .navbar-nav{
+		margin: 0px;
+}
 	.right-content{
 		float: left;
 		width: 100%;
