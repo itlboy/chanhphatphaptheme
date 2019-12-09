@@ -12,7 +12,12 @@ wp_enqueue_style( 'style', get_template_directory_uri() . '/contact-page/contact
 	</nav>
 	<div class="left-content col-md-8">
 		<div class="block-wrapper contact-wrapper col-md-12">
-			<div class="title-contact">Liên hệ</div>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+				the_content();
+			endwhile; else: ?>
+			<p>Sorry, no posts matched your criteria.</p>
+			<?php endif; ?>
+			<!-- <div class="title-contact">Liên hệ</div>
 			<div class="content-news">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed risus pretium quam vulputate dignissim. Proin fermentum leo vel orci porta. Nam at lectus urna duis. Aliquet lectus proin nibh nisl condimentum id venenatis a. Suspendisse ultrices gravida dictum fusce ut. Eu sem integer vitae justo eget magna fermentum iaculis. Eget arcu dictum varius duis at consectetur. Vulputate dignissim suspendisse in est ante in nibh. Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Pharetra massa massa ultricies mi quis hendrerit dolor magna eget. Amet venenatis urna cursus eget. Id leo in vitae turpis massa sed elementum. Diam quis enim lobortis scelerisque fermentum. Aliquet porttitor lacus luctus accumsan tortor posuere. Convallis a cras semper auctor neque vitae tempus.
 			</div>
@@ -25,7 +30,7 @@ wp_enqueue_style( 'style', get_template_directory_uri() . '/contact-page/contact
 					<span>Email: </span>
 					<span class="content-email">contact@yoursite.com</span>
 				</div>
-			</div>
+			</div> -->
 			<div class="contact-form col-xs-8">
 				<div class="title-contact">Gửi thư cho chúng tôi</div>
 				<?php echo do_shortcode('[contact-form-7 id="1163" title="Contact form 1"]'); ?>
