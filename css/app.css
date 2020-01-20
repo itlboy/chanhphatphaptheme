@@ -839,6 +839,9 @@ body{
 .right-block-equal{
 	padding: 0px;
 }
+.right-block-equal .list-news .news-item{
+	width: 100%;
+}
 
 .img-block-large{
 	width: 100%;
@@ -859,7 +862,7 @@ body{
 	padding-left: 10px;
 	padding-right: 10px;
 	float: left;
-	width: 100%;
+	/*width: 100%;*/
 }
 .list-news{
 	padding: 0px;

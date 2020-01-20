@@ -61,7 +61,7 @@ if(empty($_REQUEST['type']) || $_REQUEST['type'] == 'video'){
 								<div class="video-wrapper col-xs-12">
 									<iframe  height="200" src="<?php echo get_post_meta($post->ID, 'video_url', TRUE); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
-								<div class="title-news"><a href="<?php echo get_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></div>
+								<div class="title-news"><a href="<?php echo get_permalink($post->ID); ?>"><?php echo substr_full_word($post->post_title,50); ?></a></div>
 							</div>
 						<?php } ?>
 						
@@ -80,7 +80,7 @@ if(empty($_REQUEST['type']) || $_REQUEST['type'] == 'video'){
 										<source src="<?php echo $linkAudio; ?>" type="audio/mpeg">
 										</audio> -->
 									</div>
-									<div class="title-news"><a href="<?php echo get_permalink($audiofile->ID); ?>"><?php echo $audiofile->post_title; ?></a></div>
+									<div class="title-news"><a href="<?php echo get_permalink($audiofile->ID); ?>"><?php echo substr_full_word($audiofile->post_title,50); ?></a></div>
 								</div>
 							<?php } ?>
 						</div>

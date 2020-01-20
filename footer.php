@@ -157,7 +157,7 @@
 	</script>
 	<script>
 		var keys = ['Phật giáo','Chánh phật pháp','Phật','Tu Hành','Thích Thanh Thiện','Giảng pháp','Hành giả','Đạo'];
-		autocomplete(document.getElementById("myInput"), keys);
+		// autocomplete(document.getElementById("myInput"), keys);
 	</script>
 <?php wp_footer(); ?>
 </body>

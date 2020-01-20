@@ -69,11 +69,11 @@
 	margin-bottom: 10px;
 }
 .block-news .title-news a{
-	color:#595858;
+	color:#000;
 	text-decoration: none;
 }
 .block-news .title-news a:hover{
-	color: #000;
+	color: #79a627;
 }
 .block-news .content-news{
 	margin: 0px;

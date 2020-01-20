@@ -9,7 +9,7 @@
 }
 
 .detail-post-wrapper .header-post .name-post{
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 20px;
 	padding-right: 50px;	
 }
@@ -130,13 +130,13 @@
 }
 .list-posts-wrapper .list-link-news .link-news-item{
 	display: block;
-	color: #656565;
+	color: #000;
 	text-decoration: none;
 	font-size: 15px;
 	line-height: 25px;
 }
 .list-posts-wrapper .list-link-news .link-news-item:hover{
-	color:#000;
+	color:#79a627;
 }
 .list-posts-wrapper .list-link-news .link-news-item span{
 	margin-right: 5px;
