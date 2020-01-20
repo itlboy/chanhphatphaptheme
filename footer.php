@@ -56,7 +56,7 @@
 
 				</div>
 			</div>
-			<div class="link-wrapper col-md-3">
+			<div class="link-wrapper col-md-4">
 				<?php 
 				wp_nav_menu(
 					array(
@@ -66,7 +66,7 @@
 				); ?>
 				
 			</div>
-			<div class="contact-wrapper col-md-4">
+			<div class="contact-wrapper col-md-3">
 				<div class="title-contact">
 					Địa chỉ liên hệ
 				</div>
