@@ -36,6 +36,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+    font-family: 'VNF-Oswald';
+    src: url('VNF-Oswald.eot');
+    src: url('VNF-Oswald.eot?#iefix') format('embedded-opentype'),
+        url('VNF-Oswald.woff') format('woff'),
+        url('VNF-Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .icon-0:before {
   content: "\e900";
 }
@@ -497,7 +507,7 @@ body{
 	height: 100%;
     padding-top: 65px;
 	text-align: center;
-	font-family: "HelveticaNeue";
+	/*font-family: "HelveticaNeue";*/
 }
 .logo-wrapper .logo-title .title-top{
 	font-size: 26px;
@@ -537,6 +547,7 @@ body{
 	text-transform: uppercase;
 	font-size: 20px;
     font-weight: bold;
+    font-family: 'VNF-Oswald';
 }
 .slogan-wrapper{
 	text-align: center;
@@ -1355,6 +1366,7 @@ div.asl_w .probox .promagnifier{
 	padding-top: 55px;
 	padding-left: 0px;
 	padding-right: 0px;
+	font-family: 'VNF-Oswald';
 }
 .link-wrapper,.contact-wrapper{
 	padding-top: 40px;
