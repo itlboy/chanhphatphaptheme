@@ -36,7 +36,6 @@
   <![endif]-->
   
   <?php wp_head();?>
-  <?php echo get_stylesheet_directory_uri();die; ?>
 </head>
 
 <body>
