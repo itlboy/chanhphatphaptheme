@@ -11,6 +11,9 @@
 		$post_data= get_post();
 		setPostViews($post_id);
 
+
+		
+
 		$countView = getPostViews($post_id);
 		//get related
 
