@@ -53,14 +53,14 @@ Wordpress version supported: 3.5 and above
 }
 @media (min-width: 1200px){
     .pinwheel_slider {
-        padding-left: 80px;
-        padding-right: 80px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
 @media (min-width: 1900px){
     .pinwheel_slider {
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
 }
 

@@ -510,14 +510,14 @@ body{
 	/*font-family: "HelveticaNeue";*/
 }
 .logo-wrapper .logo-title .title-top{
-	font-size: 26px;
+	font-size: 24px;
     font-weight: bold;
     font-style: italic;
     color: #2f2f2f;
 
 }
 .logo-wrapper .logo-title .title-bottom{
-	font-size: 26px;
+	font-size: 24px;
     font-weight: bold;
     font-style: italic;
     color: #eaa959;
@@ -651,6 +651,16 @@ body{
 }
 .menu-wrapper .nav .open>a{
 	background-color: #79a627;
+}
+#container-content{
+	margin-top: 16px;
+}
+.menu-wrapper{
+	padding: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 999999999999999999999999;
 }
 .menu-wrapper .nav-tabs .menu-item .dropdown-menu{
 	margin-top: 2px;
@@ -1038,6 +1048,9 @@ body{
 .search-box input[name="search-box"]::placeholder{
 	font-style: italic;
 }
+#ajaxsearchlite1:hover{
+	border-color: #9e9898 !important;
+}
 #ajaxsearchlite1 input[type="search"]::placeholder{
 	color: #b7b7b7 !important;
 }
@@ -1045,6 +1058,15 @@ body{
 	color: #b7b7b7 !important;
 	height: 40px !important;
 }
+#ajaxsearchlite1 .proclose{
+	height: 40px !important;
+}
+#ajaxsearchlite1 .proloading{
+	width: 40px !important;
+	height: 40px !important;
+	padding: 10px !important;
+}
+
 #ajaxsearchlite1 .probox{
 	height: 40px !important;
 }
@@ -1222,6 +1244,11 @@ div.asl_w .probox .promagnifier{
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding: 0px;
+	float: left;
+	width: 100%;
+}
+.right-content .widget_wp_statistics_widget ul{
+	margin-bottom: 15px;
 }
 .right-content .widget.widget-simpletags{
 	margin-bottom: 10px;
@@ -1324,6 +1351,9 @@ div.asl_w .probox .promagnifier{
 .menu-footer .nav-tabs .menu-item a,
 .menu-footer .nav-tabs .menu-item{
 	padding: 0px
+}
+.menu-footer .nav-tabs .menu-item:hover a{
+	color: #79a627;
 }
 .menu-footer .nav-tabs{
 	border: 0px;

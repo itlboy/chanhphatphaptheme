@@ -56,13 +56,14 @@
 								<div class="hastag-block">
 										<?php dynamic_sidebar( 'list-tag' ); ?>
 								</div>
-								<div id="fb-root"></div>
-								<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
+								<!-- <div id="fb-root"></div> -->
+								<!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
 								<div class="conment-block">
 									<div class="fb-comments" data-href="https://www.facebook.com/chanhphatphap" data-width="" data-numposts="5"></div>
 									
-									
-								</div>
+								.	
+								</div> -->
+								<div class="contact-email">Đóng góp ý kiến gửi về email của chúng tôi: tuhanhdungchanhphatphap@gmail.com</div>
 							</div>
 							
 

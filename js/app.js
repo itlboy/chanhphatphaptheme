@@ -30,6 +30,7 @@ $( document ).ready(function(){
 	showHideVideoAudioPage();
 	// checkErrorImage();
 	showHideMenuMobile();
+	addEffectNotification();
 });
 function changeAudio(){
 	var el = $('.widget-audio .news-item .content-news a');
@@ -100,4 +101,7 @@ function showHideMenuMobile(){
 			$("#show-menu i").removeClass('glyphicon-menu-up');
 		}
 	});
+}
+function addEffectNotification(){
+	$('.notify-content').effect( 'pulsate');
 }

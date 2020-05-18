@@ -33,7 +33,7 @@ wp_enqueue_style( 'style', get_template_directory_uri() . '/contact-page/contact
 			</div> -->
 			<div class="contact-form col-xs-8">
 				<div class="title-contact">Gửi thư cho chúng tôi</div>
-				<?php echo do_shortcode('[contact-form-7 id="1163" title="Contact form 1"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="1123" title="Contact form 1"]'); ?>
 				<!-- <form action="subcribe" method="post" class="form-contact">
 					<input type="text" name="txtName" placeholder="Name">
 					<input type="text" name="txtMail" placeholder="Email">

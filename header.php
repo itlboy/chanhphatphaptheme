@@ -12,6 +12,23 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/app.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri() ?>/css/pinwheel.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="<?php echo get_stylesheet_directory_uri() ?>/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/favicon-16x16.png">
+	<link rel="manifest" href="<?php echo get_stylesheet_directory_uri() ?>/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="<?php echo get_stylesheet_directory_uri() ?>/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -25,13 +42,37 @@
 	<div class="wrapper-main">
 		<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-right" alt="" >
 		<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-left" alt="" >
-		<div class="container">
+		<div class="container" id="container-content">
 			<header>
 				<div class="row">
+					<div class="menu-wrapper col-lg-12">
+						<?php 
+
+						wp_nav_menu(
+							array(
+								'menu'=>'top-menu',
+								'menu_class'=>'nav nav-tabs',
+							)
+						);
+
+						$menus = wp_get_nav_menu_items('top-menu');
+						?>
+						<a id="show-menu" href="javascript:void(0)"><i class="glyphicon glyphicon-menu-down"></i></a>
+						<?php wp_nav_menu( array( 
+							'theme_location' => 'mobile-menu',
+							'container' => 'nav',
+							'container_class' => 'mobile-menu',
+							'container_id' => 'sidr'
+						) ); ?>
+						
+					</div>
+					
+				</div>
+				<!-- <div class="row">
 					<div class="contact-address col-lg-12">	
 						<div class="contact-content">Phone: (0123) 456 789 021 | Email: tuhanhchanhphatphap@gmail.com</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="row">
 					<div class="logo-wrapper col-lg-12">
 						<div class="logo-title col-lg-5">
@@ -85,30 +126,7 @@
 					</div>
 					
 				</div>
-				<div class="row">
-					<div class="menu-wrapper col-lg-12">
-						<?php 
-
-						wp_nav_menu(
-							array(
-								'menu'=>'top-menu',
-								'menu_class'=>'nav nav-tabs',
-							)
-						);
-
-						$menus = wp_get_nav_menu_items('top-menu');
-						?>
-						<a id="show-menu" href="javascript:void(0)"><i class="glyphicon glyphicon-menu-down"></i></a>
-						<?php wp_nav_menu( array( 
-							'theme_location' => 'mobile-menu',
-							'container' => 'nav',
-							'container_class' => 'mobile-menu',
-							'container_id' => 'sidr'
-						) ); ?>
-						
-					</div>
-					
-				</div>
+				
 				
 			</header>
 			<div class="main-content col-lg-12">
