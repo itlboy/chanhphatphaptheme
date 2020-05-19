@@ -78,13 +78,23 @@
 			</div>
 		</div>
 	</div>
+
 	
 
 	
 </footer>
 
 </div> <!-- /.container -->
+
 </div> 
+<div class="container-loading">
+	<div class="fancy-spinner">
+		<div class="ring"></div>
+		<div class="ring"></div>
+		<div class="dot"></div>
+	</div>
+	
+</div>
 <?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.1, true); ?>
 <?php 
 // wp_enqueue_script( 'script', get_template_directory_uri() . '/js/pinwheel.js', array ( 'jquery' ), 1.1, true);

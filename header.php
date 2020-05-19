@@ -40,6 +40,14 @@
 </head>
 
 <body>
+	<div class="container-loading">
+		<div class="fancy-spinner">
+			<div class="ring"></div>
+			<div class="ring"></div>
+			<div class="dot"></div>
+		</div>
+		
+	</div>
 	<div class="wrapper-main">
 		<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-right" alt="" >
 		<img src="<?php echo get_stylesheet_directory_uri() ?>/images/bamboo.png" id="bamboo-bg-left" alt="" >

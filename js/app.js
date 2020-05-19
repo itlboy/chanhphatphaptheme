@@ -9,10 +9,14 @@ $( document ).ready(function(){
 
 	});
 	var percent = 100/count;
+	var countKey = 0;
 	$('#menu-top-menu .menu-item').each(function(key,value) { 
-
+		countKey++;
 		if(!$(value).parent().hasClass('sub-menu')){
 			$(value).css('width',percent+'%');
+		}
+		if(countKey == count){
+			$('.container-loading').css('display','none');
 		}
 
 	});
